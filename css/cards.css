@@ -3,9 +3,61 @@
     padding: 0;
     margin: 0;
 }
+.price-cont {
+    padding: 3vh;
+}
 .sctn-card {
     margin-top: 30%;    
 }
 .carousel-item  img{
      width: 100%;
 }
+.size {
+    margin-top: 1vh;
+    
+}
+.butt {
+    padding: 1vh;
+    margin: 2vh;
+    width: 90%;
+    background-color: brown;
+    border: solid 1px brown;
+    color: whitesmoke;
+    border-radius: 10px;
+
+}
+.red-bold {
+    font-weight: bold;
+    color: brown;
+}
+.caracter {
+    padding: 2vh;
+    margin: 3vh;
+}
+.carousel-control-next {
+    color: rgb(120, 37, 37);
+}
+
+/*RESPONSIVE*/
+
+@media (min-width: 900px) {
+    .carousel-item img {
+        width: auto;
+    }
+    .sectn-card {
+        display: flex;
+        flex-direction: row
+        ;
+    }
+    .carousel {
+        width: 50%;
+    }
+    .slide {
+        margin: 0;
+    }
+    .row-mine {
+        display: flex;
+    }
+
+}                      
+
