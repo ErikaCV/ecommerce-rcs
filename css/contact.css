@@ -52,3 +52,9 @@
 	background-color: hsla(0, 0%, 100%, 0.9) !important;
 	backdrop-filter: saturate(200%) blur(25px);
 }
+
+.form-logo {
+	width: 100%;
+	text-align: center;
+	border: 3%;
+}
