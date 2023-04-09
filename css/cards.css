@@ -58,6 +58,9 @@
     .row-mine {
         display: flex;
     }
+    .carousel-item {
+        margin-left: 5vw;
+    }
 
 }                      
 
