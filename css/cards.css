@@ -37,6 +37,9 @@
 .carousel-control-next {
     color: rgb(120, 37, 37);
 }
+.img-h {
+    height: 25%;
+}
 
 /*RESPONSIVE*/
 
