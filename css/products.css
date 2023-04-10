@@ -1,0 +1,9 @@
+.cont-products {
+    width: 70%;
+    margin: auto;
+    padding: 5vh;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
