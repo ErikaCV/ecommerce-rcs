@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+.red-bold {
+  font-weight: bold;
+  color: brown;
+}
+
 /* styles banner */
 .banner-info i{
     font-size: 3rem;
@@ -56,19 +61,19 @@ background-color:#BEBEBE;
  }
 
  .gal1 {
-  background-image: url(../assets/img/carousel-1/carousel-2.jpg);
+  background-image: url(../assets/img/cards/Bicicleta\ Mtb\ Zenith.webp);
  }
  .gal2 {
-  background-image: url(../assets/img/carousel-1/carousel-1.jpg);
+  background-image: url(../assets/img/cards/rembrandt\ jumper.webp);
  }
  .gal3 {
-  background-image: url(../assets/img/carousel-1/carousel-1.jpg);
+  background-image: url(../assets/img/cards/zenith\ atacama.webp);
  }
  .gal4 {
-  background-image: url(../assets/img/carousel-1/carousel-1.jpg);
+  background-image: url(../assets/img/cards/zenith\ riva.webp);
  }
  .gal5 {
-  background-image: url(../assets/img/carousel-1/carousel-1.jpg);
+  background-image: url(../assets/img/cards/zenith\ roja.webp);
  }
  .cards-deals {
   display: flex;
