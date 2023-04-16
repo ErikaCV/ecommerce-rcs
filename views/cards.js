@@ -1,8 +1,9 @@
-const productArray = [
+const productsArray = [
     {
         id: "product01",
         title: "Pechera Radikal Racing",
-        image: "./assets/img/cards/pechera.webp",
+        image: "../assets/img/cards/pechera1.webp",
+        stock: 1, 
         category: {
             id: "accesories",
             name: "Accesorios"
@@ -11,8 +12,9 @@ const productArray = [
     },
     {
         id: "product02",
-        title: "Frenos Shimano",
-        image: "./assets/img/cards/frenos.webp",
+        title: "Frenos Shimano  Gama Media",
+        image: "../assets/img/cards/frenos.webp",
+        stock: 0,
         category: {
             id: "accesories",
             name: "Accesorios"  
@@ -22,7 +24,8 @@ const productArray = [
     {
         id: "product03",
         title: "Cubierta de Ruta Maxxis",
-        image: "./assets/img/cards/cubierta.webp",
+        image: "../assets/img/cards/cubierta.webp",
+        stock: 1,
         category: {
             id: "accesories" ,
             name: "Accesorios"
@@ -32,7 +35,8 @@ const productArray = [
     {
         id: "product04",
         title: "Ciclo Compu IGPS Sports" ,
-        image: "./assets/img/cards/ciclocompu.webp",
+        image: "../assets/img/cards/ciclocompu.webp",
+        stock: 1,
         category: {
             id: "accesories",
             name: "Accesorios"
@@ -41,8 +45,9 @@ const productArray = [
     },
     {
         id: "product05",
-        title: "Sensor de Velocidad IGPS Sport",
-        image: "./assets/img/cards/sensor velocidad.webp", 
+        title: "Sensor de Velocidad IGPS",
+        image: "../assets/img/cards/sensor velocidad.webp", 
+        stock: 1,
         category: {
             id: "accesories",
             name: "Accesorios"
@@ -51,8 +56,9 @@ const productArray = [
     },
     {
         id: "product06",
-        title: "Guantes Troy Lee",
-        image: "./assets/img/cards/guantes1.webp",
+        title: "Guantes Troy Lee - Turquesa",
+        image: "../assets/img/cards/guantes1.webp",
+        stock: 1,
         category: {
             id:"dress",
             name: "Indumentaria"
@@ -61,8 +67,9 @@ const productArray = [
     },
     {
         id: "product07",
-        title: "Calza Aero 03",
-        image: "./assets/img/cards/calza.webp",
+        title: "Calza Aero 03 Negra",
+        image: "../assets/img/cards/calza.webp",
+        stock: 1,
         category: {
             id: "dress",
             name: "Indumentaria"
@@ -72,7 +79,8 @@ const productArray = [
     {
         id: "product08",
         title: "Blue Jersey Zeroox",
-        image: "./assets/img/cards/jersey blue front.webp",
+        image: "../assets/img/cards/jersey blue front.webp",
+        stock: 1,
         category: {
             id: "dress",
             name: "Indumentaria"
@@ -82,7 +90,8 @@ const productArray = [
     {
         id: "product09",
         title: "Jersey Dama Designs Lilium",
-        image: "./assets/img/cards/jerseydama.webp",
+        image: "../assets/img/cards/jerseydama.webp",
+        stock: 0,
         category: {
             id: "dress" ,
             name: "Indumentaria"
@@ -92,7 +101,8 @@ const productArray = [
     {
         id: "product10",
         title: "Rompevientos Magenta - Negro",
-        image: "./assets/img/cards/rompeviento",
+        image: "../assets/img/cards/rompeviento.webp",
+        stock: 1,
         category: {
             id: "dress" ,
             name: "Indumentaria"
@@ -102,7 +112,8 @@ const productArray = [
     {
         id: "product11",
         title:"Zenith Urban - Amarillo",
-        image: "./assets/img/cards/urbanazenith ffw amarillo.webp",
+        image: "../assets/img/cards/urbanazenith ffw amarillo.webp",
+        stock: 0,
         category: {
             id: "bikes",
             name: "Bicicletas"
@@ -112,7 +123,8 @@ const productArray = [
     {
         id: "product12",
         title: "Zenith Andes - Negro",
-        image: "./assets/img/cards/zenith",
+        image: "../assets/img/cards/zenith.webp",
+        stock: 1,
         category: {
             id: "bikes",
             name: "Bicicletas"
@@ -122,7 +134,8 @@ const productArray = [
     {
         id: "product13",
         title: "Camicleta Niño Rembrandt - Lima",
-        image: "./assets/img/cards/rembrandt jumper.webp",
+        image: "../assets/img/cards/rembrandt jumper.webp",
+        stock: 1,
         category: {
             id: "bikes" ,
             name: "bicicletas"
@@ -132,7 +145,8 @@ const productArray = [
     {
         id: "product14",
         title: "Zenith Riva Elite - Naranja",
-        image: "./assets/img/cards/zenith riva.webp",
+        image: "../assets/img/cards/zenith riva.webp",
+        stock: 1,
         category: {
             id: "bikes" ,
             name: "bicicletas"
@@ -142,7 +156,8 @@ const productArray = [
     {
         id: "product15",
         title: "Zenith Calea - Gris",
-        image: "./assets/img/cards/Bicicleta Mtb Zenith.webp",
+        image: "../assets/img/cards/Bicicleta Mtb Zenith.webp",
+        stock: 1,
         category: {
             id: "bikes" ,
             name: "bicicletas"
@@ -152,7 +167,8 @@ const productArray = [
     {
         id: "product16",
         title: "Zenith Atacama - Negro",
-        image: "./assets/img/cards/zenith atacama.webp",
+        image: "../assets/img/cards/zenith atacama.webp",
+        stock: 1,
         category: {
             id: "bikes" ,
             name: "bicicletas"
@@ -162,7 +178,8 @@ const productArray = [
     {
         id: "product17",
         title: "Zenith Woman Cima - Gris",
-        image: "./assets/img/cards/woman cima.webps",
+        image: "../assets/img/cards/woman cima.webp",
+        stock: 1,
         category: {
             id: "bikes" ,
             name: "bicicletas"
@@ -172,7 +189,8 @@ const productArray = [
     {
         id: "product18",
         title: "Zenith Calea Elite - Roja",
-        image: "./assets/img/cards/zenith roja.webp",
+        image: "../assets/img/cards/zenith roja.webp",
+        stock: 1,
         category: {
             id: "bikes" ,
             name: "bicicletas"
@@ -181,8 +199,9 @@ const productArray = [
     },
     {
         id: "product19",
-        title: "Zenith Cima c/Suspensión - Azul",
-        image: "./assets/img/cards/zenith con suspension.webp",
+        title: "Zenith Cima c/Suspensión",
+        image: "../assets/img/cards/zenith con supension.webp",
+        stock: 0,
         category: {
             id: "bikes" ,
             name: "bicicletas"
@@ -192,7 +211,8 @@ const productArray = [
     {
         id: "product20",
         title: "Zenith Andes Elite - Celeste",
-        image: "./assets/img/cards/zenith andes elite.webp",
+        image: "../assets/img/cards/zenith andes elite.webp",
+        stock: 1,
         category: {
             id: "bikes" ,
             name: "bicicletas"
@@ -200,4 +220,39 @@ const productArray = [
         price: 230000
     }
 
-]
+];
+
+//DOM 
+
+
+
+const containerProducts = document.querySelector("#productsContainer");
+
+
+function cargarproductos() {
+    productsArray.forEach(product =>{
+
+        const div = document.createElement("div"); 
+        div.classList.add("card");
+        div.innerHTML= `
+        <img src="${product.image}"class="card-img-top" alt="${product.title}">
+        <div class="card-body text-center">
+         <h3 class="card-title">${product.title}</h3>
+         <p class="card-text"><span class="red-bold">PRECIO</span><br>$${product.price}</p>
+         <a href="#" id="${product.id}" class="btn btn-primary">Agregar al Carrito</a>
+        </div>
+         `;
+       
+         containerProducts.append(div); 
+    });
+    
+
+}
+    
+cargarproductos();
+
+
+
+    
+
+    
