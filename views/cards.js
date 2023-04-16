@@ -206,7 +206,7 @@ const productsArray = [
             id: "bikes" ,
             name: "bicicletas"
         },
-        price: 154.900
+        price: 154900
     },
     {
         id: "product20",

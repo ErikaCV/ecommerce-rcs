@@ -15,9 +15,18 @@
     background-color: rgb(254, 0, 62);
     border: solid 1px  rgb(254, 0, 62); 
     
+    
 }
 .btn:hover {
     background-color:  rgb(254, 0, 62);
     border: solid 1px  rgb(230, 221, 223); 
+}
+.btn:active { 
+    background-color: rgb(254, 0, 62);
+    border: solid 1px  rgb(254, 0, 62); 
+    
+    
+
+
 }
 
