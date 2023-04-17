@@ -228,6 +228,7 @@ const productsArray = [
 
 const containerProducts = document.querySelector("#productsContainer");
 const categoriesButtons = document.querySelectorAll(".categ-butt");
+let addButtons = document.querySelectorAll(".add-cart")
 
 
 function loadproducts(chosenProducts) {
@@ -243,13 +244,18 @@ function loadproducts(chosenProducts) {
         <div class="card-body text-center">
          <h3 class="card-title">${product.title}</h3>
          <p class="card-text"><span class="red-bold">PRECIO</span><br>$${product.price}</p>
-         <a href="#" id="${product.id}" class="btn">Agregar al Carrito</a>
+         <a href="#" id="${product.id}" class="btn add-cart">Agregar al Carrito</a>
         </div>
          `;
        
          containerProducts.append(div); 
     });
     
+    
+    refreshaddbutton()
+    
+     
+
 
 }
     
@@ -270,7 +276,7 @@ categoriesButtons.forEach(button => {
             loadproducts(productsArray)
         }
 
-
+ 
         
 
 
@@ -278,10 +284,41 @@ categoriesButtons.forEach(button => {
 
 
 
-})
+});
 
+
+function refreshaddbutton() {
+    addButtons = document.querySelectorAll(".add-cart");
+    addButtons.forEach(boton => {
+        boton.addEventListener("click", addToCart);
+    });
+}
+const productsInCart = [];
+
+function addToCart(e) {
+   const idboton = e.currentTarget.id;
+   const  productAdded = productsArray.find(product => product.id === idboton);
+   if(productsInCart.some(producto =>producto.id === idboton)){
+    const index = productsInCart.findIndex(producto => producto.id === idboton)
+    productsInCart[index].cantidad++
+
+   }else{
+      productAdded.cantidad = 1
+      productsInCart.push(productAdded);
+
+   }
+console.log(productsInCart)
+
+   
+   
+   
+   
+    
+
+}
 
 
     
 
     
+ 
