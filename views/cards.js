@@ -230,8 +230,11 @@ const containerProducts = document.querySelector("#productsContainer");
 const categoriesButtons = document.querySelectorAll(".categ-butt");
 
 
-function loadproducts() {
-    productsArray.forEach(product =>{
+function loadproducts(chosenProducts) {
+      
+    containerProducts.innerHTML = "";
+
+    chosenProducts.forEach(product =>{
 
         const div = document.createElement("div"); 
         div.classList.add("card");
@@ -250,7 +253,7 @@ function loadproducts() {
 
 }
     
-loadproducts();
+loadproducts(productsArray);
 
 categoriesButtons.forEach(button => {
     button.addEventListener("click",(e) => {
@@ -258,6 +261,17 @@ categoriesButtons.forEach(button => {
         categoriesButtons.forEach(button => button.classList.remove("active"));
 
         e.currentTarget.classList.add("active");
+
+
+        if(e.currentTarget.id != "allof") {
+        const productsButton = productsArray.filter(product => product.category.id === e.currentTarget.id);
+        loadproducts(productsButton);
+        } else {
+            loadproducts(productsArray)
+        }
+
+
+        
 
 
     })
