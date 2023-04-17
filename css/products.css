@@ -14,12 +14,14 @@
 .btn {
     background-color: rgb(254, 0, 62);
     border: solid 1px  rgb(254, 0, 62); 
+    color: aliceblue;
     
     
 }
 .btn:hover {
     background-color:  rgb(254, 0, 62);
     border: solid 1px  rgb(230, 221, 223); 
+    color: antiquewhite;
 }
 .btn:active { 
     background-color: rgb(254, 0, 62);

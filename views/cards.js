@@ -227,9 +227,10 @@ const productsArray = [
 
 
 const containerProducts = document.querySelector("#productsContainer");
+const categoriesButtons = document.querySelectorAll(".categ-butt");
 
 
-function cargarproductos() {
+function loadproducts() {
     productsArray.forEach(product =>{
 
         const div = document.createElement("div"); 
@@ -239,7 +240,7 @@ function cargarproductos() {
         <div class="card-body text-center">
          <h3 class="card-title">${product.title}</h3>
          <p class="card-text"><span class="red-bold">PRECIO</span><br>$${product.price}</p>
-         <a href="#" id="${product.id}" class="btn btn-primary">Agregar al Carrito</a>
+         <a href="#" id="${product.id}" class="btn">Agregar al Carrito</a>
         </div>
          `;
        
@@ -249,7 +250,21 @@ function cargarproductos() {
 
 }
     
-cargarproductos();
+loadproducts();
+
+categoriesButtons.forEach(button => {
+    button.addEventListener("click",(e) => {
+        
+        categoriesButtons.forEach(button => button.classList.remove("active"));
+
+        e.currentTarget.classList.add("active");
+
+
+    })
+
+
+
+})
 
 
 
