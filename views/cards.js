@@ -65,7 +65,9 @@ function addToCart(e) {
 function addProductCart(id) {
 	const productAdded = searchProduct(id);
 
- Cart.push(productAdded);
+ 	Cart.push(productAdded);
+
+	localStorage.setItem("products", JSON.stringify(Cart));
 
  return Cart
 }

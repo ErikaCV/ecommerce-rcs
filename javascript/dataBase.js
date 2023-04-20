@@ -231,26 +231,6 @@ const Category = [{
 		staus: 0
 	}];
 
-const Cart = [{
-	id: "product03",
-			title: "Cubierta de Ruta Maxxis",
-			image: "../assets/img/cards/cubierta.webp",
-			stock: 1,
-			category: {
-					id: "accesories" ,
-					name: "Accesorios"
-			},
-			price: 25600
-},{
-	id: "product03",
-			title: "Cubierta de Ruta Maxxis",
-			image: "../assets/img/cards/cubierta.webp",
-			stock: 1,
-			category: {
-					id: "accesories" ,
-					name: "Accesorios"
-			},
-			price: 25600
-}]
+const Cart = []
 
 export { Products, Category, Cart }
