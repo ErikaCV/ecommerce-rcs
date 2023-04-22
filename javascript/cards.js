@@ -1,5 +1,5 @@
-import { listPorducts, searchProduct } from '../javascript/product.js';
-import { Cart } from '../javascript/database.js';
+import { listPorducts, searchProduct } from './product.js';
+import { Cart } from './database.js';
 
 const containerProducts = document.querySelector("#productsContainer");
 const categoriesButtons = document.querySelectorAll(".categ-butt");
