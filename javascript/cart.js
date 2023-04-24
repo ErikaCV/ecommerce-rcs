@@ -1,10 +1,12 @@
-const cartMemory = JSON.parse(localStorage.getItem('products'));
+const cartLocalStorage = JSON.parse(localStorage.getItem('products'));
 
 const containerCart = document.querySelector("#container-cart");
 const infoCart = document.querySelector("#info-cart");
 const totalInforCart = document.querySelector("#total-info-cart");
+const removeProduct = document.querySelectorAll(".delete-product")
+let addButtons = document.querySelectorAll(".delete-product")
 
-
+/**************MUESTRA EL LISTADO DE PRODUCTOS******************* */
 function showProductCart (cartMemory) {
 	containerCart.innerHTML = "";
 
@@ -15,14 +17,21 @@ function showProductCart (cartMemory) {
 					<div class="d-flex flex-row"><img class="rounded" src="${product.image}" width="40">
 						<div class="ml-2"><span class="font-weight-bold d-block">${product.title}</div>
 					</div>
-						<div class="d-flex flex-row align-items-center"><span class="d-block"></span><span class="d-block mx-5 font-weight-bold">${product.price}</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
+						<div class="d-flex flex-row align-items-center">
+							<span class="d-block"></span>
+							<span class="d-block mx-5 font-weight-bold">${product.price}</span>
+							<span><button class="delete-product" id="${product.id}"><i class="bi bi-trash3"></i></button></span>
+							<i class="fa fa-trash-o ml-3 text-black-50"></i>
+						</div>
 					</div>
         `;
 		
 			containerCart.append(div); 
 	});
+
 }
 
+/**************MUESTRA LA INFO DEL CARRO******************* */
 function showInfoCart(cart) {
 	const infoCart = document.querySelector("#info-cart");
 	const div = document.createElement("div");
@@ -37,13 +46,16 @@ function showInfoCart(cart) {
 
 function calcularTotalCart (cart) {
 	let total = 0
-	for (let i = 0; i < cart.length; i++) {
-		total += cart[i].price
-	}
+
+	cart.forEach( product => {
+		total += product.price
+	})
 
 	return total
 }
 
+
+/**************MUESTRA EL TOTAL Y LOS IMPUESTOS******************* */
 function showInfortotalCart (total) {
 	const div = document.createElement("div");
 	div.innerHTML= `
@@ -56,7 +68,23 @@ function showInfortotalCart (total) {
 	totalInforCart.append(div)
 }
 
-showProductCart(cartMemory)
-showInfoCart(cartMemory)
-const total = calcularTotalCart(cartMemory)
-showInfortotalCart(calcularTotalCart(cartMemory))
+showProductCart(cartLocalStorage)
+showInfoCart(cartLocalStorage)
+const total = calcularTotalCart(cartLocalStorage)
+showInfortotalCart(calcularTotalCart(cartLocalStorage))
+
+
+/**************BORRAR PRODUCTOS DEL CARRO******************* */
+function deleteProductCart(e) {
+	console.log(e)
+	const idProduct = e.currentTarget.id;
+
+	//Retorna la posicion del producto buscado
+	const index = cartLocalStorage.findIndex(product => product.id === idProduct);
+
+	//Borrar el producto del carro en la posicion del producto encontrada arriba
+	cartLocalStorage.splice(index, 1);
+
+	//Reescribir el local storage
+	localStorage.setItem('products', JSON.stringify(cartLocalStorage))
+}

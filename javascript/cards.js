@@ -65,9 +65,18 @@ function addToCart(e) {
 function addProductCart(id) {
 	const productAdded = searchProduct(id);
 
- 	Cart.push(productAdded);
+	//VERIFICAR SI EXISTE
+	if (!localStorage.getItem('products')) {
+		localStorage.setItem('products', JSON.stringify([]));
+	}
 
-	localStorage.setItem("products", JSON.stringify(Cart));
+	//Buscamos el carro de local storage y convertimos a JSON
+ 	const cartLocalStorage = JSON.parse(localStorage.getItem('products'));
 
- return Cart
+	//Pusheamos el array del cart de LOCALSTORAGE
+	cartLocalStorage.push(productAdded);
+
+	localStorage.setItem("products", JSON.stringify(cartLocalStorage));
+
+ return cartLocalStorage
 }
