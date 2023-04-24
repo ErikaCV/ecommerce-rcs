@@ -1,4 +1,4 @@
-import { Products } from "./database.js";
+import { Products } from "./dataBase.js";
 
 const listPorducts = () => {
 	return Products

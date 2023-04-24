@@ -233,4 +233,26 @@ const Category = [{
 
 const Cart = []
 
-export { Products, Category, Cart }
+const Users = [
+	{   
+		id: 1,
+		name: "Erika Cruz Vallejo",
+		linkedin: "www.google.com",
+		gitHub: "www.google.com",
+	},
+	{   
+		id: 2,
+		name: "Samir Mahmud",
+		linkedin: "www.google.com",
+		gitHub: "www.google.com",
+	},
+	{   
+		id: 3,
+		name: "José Terol",
+		linkedin: "www.google.com",
+		gitHub: "www.google.com",
+	}
+]
+
+export { Products, Category, Cart, Users}
+
