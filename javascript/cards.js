@@ -10,7 +10,6 @@ function loadproducts(chosenProducts) {
     containerProducts.innerHTML = "";
 
     chosenProducts.forEach(product =>{
-
         const div = document.createElement("div"); 
         div.classList.add("card");
         div.innerHTML= `

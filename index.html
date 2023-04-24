@@ -66,17 +66,27 @@
 			</ul>
 			<ul class="navbar-nav ms-auto ">
 				<li class="nav-item d-flex align-items-center">
-					<a class="nav-link mx-2 text-uppercase" href="./views/cart.html">
-					<i class="fa-solid fa-cart-shopping me-1"></i>Carro</a>
-				</li>
-				<li class="nav-item d-flex align-items-center">
 					<a class="nav-link mx-2 text-uppercase" href="./views/login.html"><i
 							class="fa-solid fa-circle-user me-1"></i>Cuenta</a>
 				</li>
+				
 			</ul>
 		</div>
 	</nav>
-	<!--Carusel-->
+  <!--carrito desplegable-->
+  <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa-solid fa-cart-shopping me-1"></i> Ver Mi Carrito</button>
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Carrito Desplegable</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>Aqui van los productos</p>
+      </div>
+	</div>
+      
+	
+<!--Carusel-->
 	<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-inner">
 		  <div class="carousel-item active" data-bs-interval="5000">
