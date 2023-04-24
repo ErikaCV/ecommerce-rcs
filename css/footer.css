@@ -1,7 +1,7 @@
 .cont-items-flex {
     background-color: rgba(4,4,4,0.1);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-inline: 3rem;
     padding-block: 3rem;
 }
@@ -23,6 +23,10 @@
     margin-block: 1rem;
 }
 
+.cont-items i {
+    font-size: 3rem;
+    color:  #dc3545 ;
+}
 .cont-items p {
     color: #dc3545;
     font-size: 1rem;
@@ -42,7 +46,10 @@
     width: 3.5rem;
     margin-block: 1rem;
 }
-
+.cont-items.social {
+    display: flex;
+    flex-direction: column;
+}
 .cont-buy {
     display: flex;
     justify-content: space-around;
@@ -152,7 +159,7 @@
 
 @media screen and (min-width: 1280px) {
     .cont-items-flex {
-        justify-content: space-between;
+        justify-content: space-around;
         padding-inline: 3rem;
         padding-block: 3rem;
     }
