@@ -60,8 +60,6 @@ function showInfortotalCart (total) {
 	const div = document.createElement("div");
 	div.innerHTML= `
 	<div>
-		<div class="d-flex justify-content-between information"><span>Subtotal</span><span>${total}</span></div>
-		
 		<div class="d-flex justify-content-between information"><span>Total (Incl. Impuestos)</span><span>${total}</span></div><button class="btn btn-primary btn-block d-flex justify-content-between mt-3" type="button"><span>${total}</span><span class="mx-3">Pagar<i class="fa fa-long-arrow-right mx-3"></i></span></button></div>
 	</div>
 	`
