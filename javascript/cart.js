@@ -20,7 +20,7 @@ function showProductCart (cartMemory) {
 						<div class="d-flex flex-row align-items-center">
 							<span class="d-block"></span>
 							<span class="d-block mx-5 font-weight-bold">${product.price}</span>
-							<span><button class="delete-product" id="${product.id}"><i class="bi bi-trash3"></i></button></span>
+							<span><button data-productid="${product.id}"  class="delete-product" id="${product.id}"><i class="deleteproduct bi bi-trash"></i></button></span>
 							<i class="fa fa-trash-o ml-3 text-black-50"></i>
 						</div>
 					</div>
@@ -61,7 +61,7 @@ function showInfortotalCart (total) {
 	div.innerHTML= `
 	<div>
 		<div class="d-flex justify-content-between information"><span>Subtotal</span><span>${total}</span></div>
-		<div class="d-flex justify-content-between information"><span>Impuestos</span><span>$20.00</span></div>
+		
 		<div class="d-flex justify-content-between information"><span>Total (Incl. Impuestos)</span><span>${total}</span></div><button class="btn btn-primary btn-block d-flex justify-content-between mt-3" type="button"><span>${total}</span><span class="mx-3">Pagar<i class="fa fa-long-arrow-right mx-3"></i></span></button></div>
 	</div>
 	`
@@ -75,16 +75,24 @@ showInfortotalCart(calcularTotalCart(cartLocalStorage))
 
 
 /**************BORRAR PRODUCTOS DEL CARRO******************* */
+
 function deleteProductCart(e) {
-	console.log(e)
-	const idProduct = e.currentTarget.id;
-
-	//Retorna la posicion del producto buscado
-	const index = cartLocalStorage.findIndex(product => product.id === idProduct);
-
-	//Borrar el producto del carro en la posicion del producto encontrada arriba
+	const idProduct = e.currentTarget.dataset.productid || e.currentTarget.parentElement.id;
+	const index = cartLocalStorage.findIndex(product => product	.id === idProduct);
 	cartLocalStorage.splice(index, 1);
-
-	//Reescribir el local storage
 	localStorage.setItem('products', JSON.stringify(cartLocalStorage))
+	const productToDelete = document.getElementById(idProduct);
+	if (productToDelete) {
+	  productToDelete.remove();
+	  
+	}
+	location.reload()
 }
+  
+  const deleteButtons = document.getElementsByClassName("deleteproduct");
+  for (let i = 0; i < deleteButtons.length; i++) {
+	deleteButtons[i].addEventListener("click", deleteProductCart);
+ }
+
+
+
