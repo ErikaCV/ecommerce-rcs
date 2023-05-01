@@ -29,7 +29,7 @@ const renderImages = (image) => {
     `;
 }
 const image = {
-    image1: './assets/img/carousel-1/carousel-1.jpg',
+    image1: './assets/img/carousel-1/carousel-1-c.jpg',
     alt1: 'Imagen 1',
     image2: './assets/img/carousel-1/carousel-2.jpg',
     alt2: 'Imagen 2',
