@@ -1,4 +1,7 @@
 import { listPorducts, searchProduct } from '../javascript/product.js';
+import { Products } from './dataBase.js';
+
+const miArrayDeObjetos = JSON.parse(localStorage.getItem('miArray'));
 
 const containerProducts = document.querySelector("#productsContainer");
 const categoriesButtons = document.querySelectorAll(".categ-butt");
@@ -27,7 +30,7 @@ function loadproducts(chosenProducts) {
     refreshaddbutton()
 }
     
-loadproducts(listPorducts());
+loadproducts(Products)
 
 categoriesButtons.forEach(button => {
 	button.addEventListener("click",(e) => {

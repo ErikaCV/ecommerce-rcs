@@ -256,3 +256,5 @@ const Users = [
 
 export { Products, Category, Cart, Users}
 
+localStorage.setItem('miArray', JSON.stringify(Products));
+
