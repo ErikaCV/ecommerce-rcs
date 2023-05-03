@@ -39,16 +39,3 @@ const image = {
   
   renderImages(image);
 
-function showInfoCountCart() { 
-    const cartLocalStorage = JSON.parse(localStorage.getItem('products'));
-
-	let infoCart = document.getElementById("cart-count");
-
-	const span = document.createElement("span");
-	span.innerHTML= `
-	<span class="count-number">${cartLocalStorage.length}</span>
-	`;
-	infoCart.appendChild(span)
-}
-
-showInfoCountCart()

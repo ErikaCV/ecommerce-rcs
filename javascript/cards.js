@@ -61,11 +61,13 @@ function addToCart(e) {
 	const idProduct = e.currentTarget.id;
 	const productAdded = addProductCart(idProduct)
 
-	console.log(productAdded)
+	
 }
+
 
 function addProductCart(id) {
 	const productAdded = searchProduct(id);
+	
 
 	//VERIFICAR SI EXISTE
 	if (!localStorage.getItem('products')) {
@@ -79,6 +81,7 @@ function addProductCart(id) {
 	cartLocalStorage.push(productAdded);
 
 	localStorage.setItem("products", JSON.stringify(cartLocalStorage));
-
+	
  return cartLocalStorage
+
 }
