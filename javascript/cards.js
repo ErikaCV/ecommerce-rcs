@@ -55,18 +55,21 @@ function refreshaddbutton() {
   addButtons.forEach(boton => {
       boton.addEventListener("click", addToCart);
   });
+  
 }
 
 function addToCart(e) {
 	const idProduct = e.currentTarget.id;
 	const productAdded = addProductCart(idProduct)
 
-	
+
+	location.reload()
 }
 
 
 function addProductCart(id) {
 	const productAdded = searchProduct(id);
+	
 	
 
 	//VERIFICAR SI EXISTE
