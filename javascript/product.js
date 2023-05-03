@@ -5,13 +5,28 @@ const listPorducts = () => {
 }
 
 const searchProduct = (idProduct) => {
-		const product = Products.find(product => product.id === idProduct)
-	
-		if (!product) {
-			return console.log('Product not Founed');
-		}
-	
-		return product
+	const product = Products.find(product => product.id === idProduct)
+
+	if (!product) {
+		return console.log('Product not Founed');
+	}
+
+	return product
 };
+
+function callToProduct(Products) {
+	addButtons = document.querySelectorAll("#product-card");
+	addButtons.forEach(boton => {
+		boton.addEventListener("click", searchtarget);
+	});
+
+}
+
+function searchtarget(e) {
+	const idProduct = e.currentTarget.id;
+	const productFound = Products.find(product => product.id === idProduct);
+
+	return productFound
+}
 
 export { searchProduct, listPorducts }

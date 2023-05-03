@@ -51,8 +51,16 @@
 					<button class="btn btn-danger text-white">Buscar</button>
 				</div>
 			</div>
-
+			
 			<ul class="navbar-nav ms-auto ">
+				<li class="nav-item d-flex align-items-center">
+					<span id="cart-count">
+	
+					</span>
+					<a class="nav-link mx-2 text-uppercase" href="./views/cart.html">
+					<i class="fa-solid fa-cart-shopping me-1"></i>Carro</a>
+				</li>
+	
 				<li class="nav-item">
 					<a class="nav-link mx-2 text-uppercase active bg-danger text-white" aria-current="page"
 						href="./views/products.html">Productos</a>
@@ -65,11 +73,7 @@
 				</li>
 			</ul>
 			<ul class="navbar-nav ms-auto ">
-				<li class="nav-item d-flex align-items-center">
-					<span class="cart-count">0</span>
-					<a class="nav-link mx-2 text-uppercase" href="./views/cart.html">
-					<i class="fa-solid fa-cart-shopping me-1"></i>Carro</a>
-				</li>
+				
 				<li class="nav-item d-flex align-items-center">
 					<a class="nav-link mx-2 text-uppercase" href="./views/login.html"><i
 							class="fa-solid fa-circle-user me-1"></i>Cuenta</a>
@@ -138,7 +142,7 @@
 							<div class="card-body text-center">
 								<h5 class="card-title">Ciclo Compu IGPS Sport</h5>
 								<p class="card-text"><span class="red-bold">PRECIO</span><br>$64.500</p>
-								<a href="#" class="btn btn-danger">Ir al Producto</a>
+								<a href="./views/card.html" id="product-card" class="btn btn-danger">Ir al Producto</a>
 							</div>
 						</div>
 						<div class="card" style="width: 18rem;">
@@ -147,7 +151,7 @@
 								<h5 class="card-title">Guantes Troy Lee Turqoise</h5>
 								<p class="card-text"><span class="red-bold">PRECIO</span><br>$14.900</p>
 
-								<a href="./views/card.html" class="btn btn-danger">Ir al Producto</a>
+								<a href="./views/card.html"  id="product-card" class="btn btn-danger">Ir al Producto</a>
 							</div>
 						</div>
 						<div class="card d-none d-md-block" style="width: 18rem;">
@@ -155,7 +159,7 @@
 							<div class="card-body text-center">
 								<h5 class="card-title">Blue jersey Ziroox</h5>
 								<p class="card-text"><span class="red-bold">PRECIO</span><br>$13.800</p>
-								<a href="./views/card.html" class="btn btn-danger">Ir al Producto</a>
+								<a href="./views/card.html" id="product-card" class="btn btn-danger">Ir al Producto</a>
 							</div>
 						</div>
 						<div class="card" style="width: 18rem;">
@@ -163,7 +167,7 @@
 							<div class="card-body text-center">
 								<h5 class="card-title">Zenith Andes Rodado 29</h5>
 								<p class="card-text"><span class="red-bold">PRECIO</span><br>$184.900</p>
-								<a href="#" class="btn btn-danger">Ir al Producto</a>
+								<a href="./views/card.html" id="product-card" class="btn btn-danger">Ir al Producto</a>
 							</div>
 						</div>
 					</div>
@@ -285,58 +289,57 @@
 		  <video src="assets/video/bi-video/Firebird – The Fly By.mp4" controls poster="./assets/img/img-firebird/bi-firebird.jpg"></video>
 		</div>	
 		<footer>
-		<div class="cont-items-flex">
-			<div class="cont-items">
-				<h2 class="title-items">Categorias</h2>
-				<div class="cont-link-footer">
-					<a href="#">OFERTAS</a>
-					<a href="#">PRODUCTOS</a>
-					<a href="#">CONTACTANOS</a>
-				</div>	
+				<div class="cont-items-flex">
+					<div class="cont-items">
+						<h2 class="title-items">Categorias</h2>
+						<div class="cont-link-footer">
+							<a href="#">OFERTAS</a>
+							<a href="#">PRODUCTOS</a>
+							<a href="#">CONTACTANOS</a>
+						</div>	
+						</div>
+					<div class="cont-items social">
+						<h2 class="title-items">Seguinos</h2>
+						<a href="#">
+							<i class="bi bi-instagram icons-social "></i>
+						</a>
+						<a href="#">
+							<i class="bi bi-twitter icons-social"></i>
+						</a>
+						<a href="#">
+							<i class="bi bi-facebook icons-social"></i>
+						</a>
+					</div>
+					<div class="cont-items">
+						<h2 class="title-items">Contáctanos</h2>
+						<div id="container-footer">
+							
+						</div>
+					</div>
 				</div>
-			<div class="cont-items social">
-				<h2 class="title-items">Seguinos</h2>
-				<a href="#">
-					<i class="bi bi-instagram icons-social "></i>
-				</a>
-				<a href="#">
-					<i class="bi bi-twitter icons-social"></i>
-				</a>
-				<a href="#">
-					<i class="bi bi-facebook icons-social"></i>
-				</a>
-			</div>
-			<div class="cont-items">
-				<h2 class="title-items">Contáctanos</h2>
-				<div id="container-footer">
-					
+				<div class="cont-buy">
+					<h2 class="title-items">Medios de pago</h2>
+					<div>
+						<img class="icon-card" src="./assets/img/img-footer/visa@2x.png">
+						<img class="icon-card" src="./assets/img/img-footer/tarjeta-shopping@2x.png">
+						<img class="icon-card" src="./assets/img/img-footer/tarjeta-naranja@2x.png">
+						<img class="icon-card" src="./assets/img/img-footer/mastercard@2x.png">
+						<img class="icon-card" src="./assets/img/img-footer/diners@2x.png">
+						<img class="icon-card" src="./assets/img/img-footer/cabal@2x.png">
+						<img class="icon-card" src="./assets/img/img-footer/banelco@2x.png">
+						<img class="icon-card" src="./assets/img/img-footer/amex@2x.png">
+					</div>
 				</div>
-			</div>
+				<div class="cont-copy">
+					<h3>Copyright© The Bike - 2023 Todos los derechos reservados</h3>
+				</div> 
 		</div>
-		<div class="cont-buy">
-			<h2 class="title-items">Medios de pago</h2>
-			<div>
-				<img class="icon-card" src="./assets/img/img-footer/visa@2x.png">
-				<img class="icon-card" src="./assets/img/img-footer/tarjeta-shopping@2x.png">
-				<img class="icon-card" src="./assets/img/img-footer/tarjeta-naranja@2x.png">
-				<img class="icon-card" src="./assets/img/img-footer/mastercard@2x.png">
-				<img class="icon-card" src="./assets/img/img-footer/diners@2x.png">
-				<img class="icon-card" src="./assets/img/img-footer/cabal@2x.png">
-				<img class="icon-card" src="./assets/img/img-footer/banelco@2x.png">
-				<img class="icon-card" src="./assets/img/img-footer/amex@2x.png">
-			</div>
-		</div>
-		<div class="cont-copy">
-			<h3>Copyright© The Bike - 2023 Todos los derechos reservados</h3>
-		</div> 
-		</div>
-		
-	</footer>
-	  </section>
-	  
-
+		</footer>
+	</section>
 	<script  src="./javascript/slider.js"></script>
 	<script type="module" src="./javascript/footer.js"></script>
-	<script src="./javascript/cart.js"></script>
+	<script type="module" src="./javascript/product.js"></script>
+	
 </body>
+
 </html>

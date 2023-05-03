@@ -36,11 +36,10 @@ function showInfoCart(cart) {
 	const infoCart = document.querySelector("#info-cart");
 	const div = document.createElement("div");
 	div.innerHTML= `
-	<div class="d-flex justify-content-between"><span>Tu tienes ${cart.length} items en el carro</span>
-		<div class="d-flex flex-row align-items-center"><span class="text-black-50 mx-2">Sort by: </span>
-			<div class="price ml-2"><span class="mx-1">price</span><i class="fa fa-angle-down"></i></div>
-		</div>
-	</div>`;
+	<div 
+	class="d-flex justify-content-between"><span>Tu tienes ${cart.length} items en el carro</span>
+	</div>
+	`;
 	infoCart.append(div)
 }
 
@@ -91,6 +90,11 @@ function deleteProductCart(e) {
   for (let i = 0; i < deleteButtons.length; i++) {
 	deleteButtons[i].addEventListener("click", deleteProductCart);
  }
+
+
+
+/************************Contador del Carrito*******************************/
+
 
 
 
