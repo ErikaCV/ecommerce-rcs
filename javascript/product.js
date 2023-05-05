@@ -8,7 +8,7 @@ const searchProduct = (idProduct) => {
 	const product = Products.find(product => product.id === idProduct)
 
 	if (!product) {
-		return console.log('Product not Founed');
+		return console.log('Product not Found');
 	}
 
 	return product
