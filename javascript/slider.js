@@ -38,3 +38,4 @@ const image = {
   };
   
   renderImages(image);
+

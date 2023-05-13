@@ -1,5 +1,7 @@
 import { listPorducts, searchProduct } from '../javascript/product.js';
-import { Cart } from '../javascript/dataBase.js';
+import { Products } from './dataBase.js';
+
+const miArrayDeObjetos = JSON.parse(localStorage.getItem('miArray'));
 
 const containerProducts = document.querySelector("#productsContainer");
 const categoriesButtons = document.querySelectorAll(".categ-butt");
@@ -28,7 +30,7 @@ function loadproducts(chosenProducts) {
     refreshaddbutton()
 }
     
-loadproducts(listPorducts());
+loadproducts(Products)
 
 categoriesButtons.forEach(button => {
 	button.addEventListener("click",(e) => {
@@ -53,17 +55,22 @@ function refreshaddbutton() {
   addButtons.forEach(boton => {
       boton.addEventListener("click", addToCart);
   });
+  
 }
 
 function addToCart(e) {
 	const idProduct = e.currentTarget.id;
 	const productAdded = addProductCart(idProduct)
 
-	console.log(productAdded)
+
+	location.reload()
 }
+
 
 function addProductCart(id) {
 	const productAdded = searchProduct(id);
+	
+	
 
 	//VERIFICAR SI EXISTE
 	if (!localStorage.getItem('products')) {
@@ -77,6 +84,7 @@ function addProductCart(id) {
 	cartLocalStorage.push(productAdded);
 
 	localStorage.setItem("products", JSON.stringify(cartLocalStorage));
-
+	
  return cartLocalStorage
+
 }

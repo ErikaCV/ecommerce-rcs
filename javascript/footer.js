@@ -31,9 +31,43 @@ function loadusers() {
 loadusers()
         
 
+function showInfoCountCart() { 
+    const cartLocalStorage = JSON.parse(localStorage.getItem('products'));
+
+	let infoCart = document.getElementById("cart-count");
+
+	const span = document.createElement("span");
+	span.innerHTML= `
+	<span class="count-number">${cartLocalStorage.length}</span>
+	`;
+	infoCart.appendChild(span)
+}
+
+showInfoCountCart()
+
+/***Busqueda ****
+
+let boton = document.getElementById("searchButton");
+
+boton.addEventListener("click", () => {
+
+  let input = document.getElementById("searchInput");
+  let valor = input.value;
+
+  alert("El valor del campo es:"+ valor);
+  
+});
 
 
+document.getElementById('search-form').addEventListener("submit", function(e) {
+    e.preventDefault();
 
+    let input = document.getElementById("searchInput");
+    let valor = input.value;
 
+    window.location('http://127.0.0.1:5500/views/products.html')
 
+    alert("El valor del campo es:"+ valor);
 
+    console.log('Estamos buscando un perrito malvado.')
+})*/

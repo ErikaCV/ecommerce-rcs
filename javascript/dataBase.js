@@ -14,7 +14,7 @@ const Products = [
 			id: "product02",
 			title: "Frenos Shimano  Gama Media",
 			image: "../assets/img/cards/frenos.webp",
-			stock: 0,
+			stock: 1,
 			category: {
 					id: "accesories",
 					name: "Accesorios"  
@@ -91,7 +91,7 @@ const Products = [
 			id: "product09",
 			title: "Jersey Dama Designs Lilium",
 			image: "../assets/img/cards/jerseydama.webp",
-			stock: 0,
+			stock: 1,
 			category: {
 					id: "dress" ,
 					name: "Indumentaria"
@@ -113,7 +113,7 @@ const Products = [
 			id: "product11",
 			title:"Zenith Urban - Amarillo",
 			image: "../assets/img/cards/urbanazenith ffw amarillo.webp",
-			stock: 0,
+			stock: 1,
 			category: {
 					id: "bikes",
 					name: "Bicicletas"
@@ -201,7 +201,7 @@ const Products = [
 			id: "product19",
 			title: "Zenith Cima c/Suspensión",
 			image: "../assets/img/cards/zenith con supension.webp",
-			stock: 0,
+			stock: 1,
 			category: {
 					id: "bikes" ,
 					name: "bicicletas"
@@ -255,4 +255,6 @@ const Users = [
 ]
 
 export { Products, Category, Cart, Users}
+
+localStorage.setItem('miArray', JSON.stringify(Products));
 
