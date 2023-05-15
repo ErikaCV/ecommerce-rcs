@@ -1,4 +1,4 @@
-import { Products } from "./dataBase";
+import { Products } from "./dataBase.js";
 
 const cartLocalStorage = JSON.parse(localStorage.getItem('products'));
 
@@ -95,29 +95,5 @@ function deleteProductCart(e) {
 
 
 
-/***********************BARRA DE BUSQUEDA*******************************/
-const searchButton = document.getElementById("searchButton");
-searchButton.addEventListener("click", doSearchProducts)
-
-function buscarProductos() {
-	const query = document.getElementById('searchInput').value;
-	const resultados = [];
-  
-	Products.forEach(producto => {
-	  if (producto.name.toLowerCase().includes(query.toLowerCase())) {
-		resultados.push(producto);
-	  }
-	});
-  
-	return resultados;
-  }
-  
-
-function doSearchProducts() {
-	const productFound = buscarProductos();
-	console.log(productFound)
-
-
-}
 
 
