@@ -107,3 +107,8 @@
   .spec {
 	font-size: 11px;
   }
+  .deleteproduct {
+	padding: 3px;
+	border-radius: 15%;
+  }
+  
