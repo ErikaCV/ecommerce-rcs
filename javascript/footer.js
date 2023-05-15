@@ -13,10 +13,10 @@ function loadusers() {
         <div>
             <p>${user.name}</p>
             <a href="#">
-                <a href="${user.gitHub}"><i class="bi bi-github"></i></a>
+                <a href="${user.gitHub}"><i class="bi bi-github icono-github"></i></a>
             </a>
             <a href="#">
-                <a href="${user.linkedin}"><i class="bi bi-linkedin"></i></a>
+                <a href="${user.linkedin}"><i class="bi bi-linkedin icono-linkedin"></i></a>
             </a>
         </div>		
         `;

@@ -1,5 +1,5 @@
 .navbar a {
-	font-size:16px;
+	font-size:15px;
 	font-weight:700
   }
 .navbar-nav {
@@ -11,7 +11,7 @@
 	margin: 0;
 }
   .superNav {
-	font-size:13px;
+	font-size:10px;
   }
   .form-control {
 	outline:none !important;
@@ -21,4 +21,5 @@
 	.centerOnMobile {
 	  text-align:center
 	}
+
 }

@@ -1,4 +1,6 @@
 .cont-items-flex {
+		text-align: center;
+		align-items: center;
     background-color: rgba(4,4,4,0.1);
     display: flex;
     justify-content: space-around;
@@ -7,9 +9,10 @@
 }
 
 .title-items {
-    color: #dc3545;
-    font-size: 1.4rem;
+    color: black;
+    font-size: 1.6rem;
     font-weight: 700;
+		font-weight: bold;
 }
 
 .cont-link-footer {
@@ -20,16 +23,21 @@
 .cont-link-footer a {
     color: #dc3545;
     font-size: 1rem;
+		font-weight: bold;
     margin-block: 1rem;
 }
 
+.cont-items {
+	align-items: center;
+}
+
 .cont-items i {
-    font-size: 2rem;
-    color:  #dc3545 ;
+    font-size: 1.5rem;
 }
 .cont-items p {
     color: #dc3545;
     font-size: 1rem;
+		font-weight: bold;
     margin-block: 1rem;
 }
 
@@ -49,6 +57,7 @@
 .cont-items.social {
     display: flex;
     flex-direction: column;
+		align-items: center;
 }
 .cont-buy {
     display: flex;
@@ -74,6 +83,19 @@
     font-weight: 700;
     color: white;
     padding-block: 2rem;
+}
+
+.icono-github {
+	transition: 0.5s;
+	transform: scale(1.5);
+	color: black;
+}
+
+
+.icono-linkedin {
+	transition: 0.5s;
+	transform: scale(1.5);
+	color: #0e76a8;
 }
 
 /* RESPONSIVE */
@@ -109,6 +131,7 @@
     }
 
     .cont-items {
+				align-items: center;
         margin-top: 1rem;
     }
 
@@ -170,3 +193,23 @@
     }
 }
 
+/*REDES SOCIALES*/
+.instagram {
+ color: #E1306C;
+}
+
+.twiter {
+	color: #00acee;
+}
+
+.facebook {
+	color: #3b5998;
+}
+
+.github {
+	color: #333;
+}
+
+.linkedin {
+ color: #0e76a8;
+}
