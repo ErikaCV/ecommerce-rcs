@@ -5,15 +5,15 @@ const rootSlider = document.getElementById("root-slider");
 
 const renderImages = (image) => {
     rootSlider.innerHTML = `
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="5000">
-                <img src="${image.image1}" class="d-block w-100" alt="${image.alt1}">
+    <div id="carouselExampleInterval" class="carousel slide carousel-1 carousel-1-item" data-bs-ride="carousel">
+        <div class="carousel-inner ">
+            <div class="carousel-item active carousel-1-item" data-bs-interval="5000">
+                <img src="${image.image1}" class="d-block w-100 "  alt="${image.alt1}">
             </div>
-            <div class="carousel-item" data-bs-interval="5000">
-                <img src="${image.image2}" class="d-block w-100" alt="${image.alt2}">
+            <div class="carousel-item carousel-1-item" data-bs-interval="5000">
+                <img src="${image.image2}" class="d-block w-100 " alt="${image.alt2}">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item carousel-1-item">
                 <img src="${image.image3}" class="d-block w-100" alt="${image.alt3}">
             </div>
         </div>
