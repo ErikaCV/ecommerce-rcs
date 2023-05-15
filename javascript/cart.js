@@ -1,3 +1,5 @@
+import { Products } from "./dataBase";
+
 const cartLocalStorage = JSON.parse(localStorage.getItem('products'));
 
 const containerCart = document.querySelector("#container-cart");
@@ -93,8 +95,29 @@ function deleteProductCart(e) {
 
 
 
-/************************Contador del Carrito*******************************/
+/***********************BARRA DE BUSQUEDA*******************************/
+const searchButton = document.getElementById("searchButton");
+searchButton.addEventListener("click", doSearchProducts)
+
+function buscarProductos() {
+	const query = document.getElementById('searchInput').value;
+	const resultados = [];
+  
+	Products.forEach(producto => {
+	  if (producto.name.toLowerCase().includes(query.toLowerCase())) {
+		resultados.push(producto);
+	  }
+	});
+  
+	return resultados;
+  }
+  
+
+function doSearchProducts() {
+	const productFound = buscarProductos();
+	console.log(productFound)
 
 
+}
 
 

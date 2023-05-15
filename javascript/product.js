@@ -30,3 +30,6 @@ function searchtarget(e) {
 }
 
 export { searchProduct, listPorducts }
+/***********************BARRA DE BUSQUEDA*******************************/
+
+

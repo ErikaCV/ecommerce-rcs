@@ -62,7 +62,7 @@ function addToCart(e) {
 	const idProduct = e.currentTarget.id;
 	const productAdded = addProductCart(idProduct)
 
-
+			
 	location.reload()
 }
 
