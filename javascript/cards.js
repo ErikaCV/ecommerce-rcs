@@ -20,12 +20,19 @@ function loadproducts(chosenProducts) {
         div.innerHTML= `
 					<img src="${product.image}"class="card-img-top" alt="${product.title}">
 					<div class="card-body text-center">
-					<h3 class="card-title">${product.title}</h3>
-					<p class="card-text"><span class="red-bold">PRECIO</span><br>$${product.price}</p>
-					<a href="#" id="${product.id}" class="btn add-cart">Agregar al Carrito</a>
+					  <h3 class="card-title">${product.title}</h3>
+					  <p class="card-text"><span class="red-bold">PRECIO</span><br>$${product.price}</p>
 					</div>
+					<div class="card-body d-flex filternone">
+					    <a href="#" id="${product.id}" class="btn add-cart">Agregar al Carrito</a>
+					    <a href="#" class="btn btn-danger p-1 m-1">Ir al Producto</a>
+					</div>
+					
         `;
 
+
+								
+			
         containerProducts.append(div); 
     });
     
