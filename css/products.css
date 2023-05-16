@@ -8,6 +8,10 @@
 }
 .card {
     width: 18rem;
+    transition: all 0.3s ease-out;
+}
+.card img {
+    height: auto;
 }
 .btn {
     background-color: rgb(254, 0, 62);
@@ -24,10 +28,9 @@
 .btn:active { 
     background-color: rgb(254, 0, 62);
     border: solid 1px  rgb(254, 0, 62); 
-    
-    
-
-
+}
+.fliter {
+    display: none;
 }
 .menu-nav {
     color: black;

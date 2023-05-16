@@ -1,5 +1,7 @@
 import { listPorducts, searchProduct } from '../javascript/product.js';
 import { Products } from './dataBase.js';
+import { filterProducts } from './filter.js';
+
 
 const miArrayDeObjetos = JSON.parse(localStorage.getItem('miArray'));
 
@@ -31,6 +33,7 @@ function loadproducts(chosenProducts) {
 }
     
 loadproducts(Products)
+filterProducts()
 
 categoriesButtons.forEach(button => {
 	button.addEventListener("click",(e) => {
