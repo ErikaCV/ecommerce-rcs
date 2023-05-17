@@ -1,5 +1,7 @@
 import { listPorducts, searchProduct } from '../javascript/product.js';
 import { Products } from './dataBase.js';
+import { filterProducts } from './filter.js';
+
 
 const miArrayDeObjetos = JSON.parse(localStorage.getItem('miArray'));
 
@@ -18,12 +20,19 @@ function loadproducts(chosenProducts) {
         div.innerHTML= `
 					<img src="${product.image}"class="card-img-top" alt="${product.title}">
 					<div class="card-body text-center">
-					<h3 class="card-title">${product.title}</h3>
-					<p class="card-text"><span class="red-bold">PRECIO</span><br>$${product.price}</p>
-					<a href="#" id="${product.id}" class="btn add-cart">Agregar al Carrito</a>
+					  <h3 class="card-title">${product.title}</h3>
+					  <p class="card-text"><span class="red-bold">PRECIO</span><br>$${product.price}</p>
 					</div>
+					<div class="card-body d-flex filternone">
+					    <a href="#" id="${product.id}" class="btn add-cart filternone"><i class="bi bi-cart-plus-fill"></i></a>
+					    <a href="../views/card.html" target="_blank" data-productid="${product.id}" class="btn btn-danger p-1 m-1 filternone product">Ir al Producto</a>
+					</div>
+					
         `;
 
+
+								
+			
         containerProducts.append(div); 
     });
     
@@ -31,6 +40,7 @@ function loadproducts(chosenProducts) {
 }
     
 loadproducts(Products)
+filterProducts()
 
 categoriesButtons.forEach(button => {
 	button.addEventListener("click",(e) => {

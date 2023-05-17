@@ -6,13 +6,67 @@
     display: flex;
     justify-content: space-between;
 }
-.card {
-    width: 18rem;
+.cont-products .card {
+    margin: 3vh;
+    border: none;
 }
+.card {
+    
+    margin: 0vh;
+    width: 18rem;
+    transition: all 0.3s ease-out;
+    position: relative;
+    
+}
+.card-body{
+   
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.filternone  {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    
+
+}
+.card img {
+    height: auto;
+}
+.card:hover {
+    border: solid rgb(212, 212, 129) 1px;
+    color: grey;
+    transform: scale(1.1);
+}
+.card:hover .filternone {
+    /* display: block; */
+    visibility: visible;
+    opacity: 1;
+    
+
+
+   
+}
+.card i {
+    font-size:large
+
+
+}
+.card .btn {
+    width: 100%;
+
+}
+
 .btn {
     background-color: rgb(254, 0, 62);
     border: solid 1px  rgb(254, 0, 62); 
     color: aliceblue;
+    font-size: 1rem;
+    
+
+
     
     
 }
@@ -24,10 +78,9 @@
 .btn:active { 
     background-color: rgb(254, 0, 62);
     border: solid 1px  rgb(254, 0, 62); 
-    
-    
-
-
+}
+.fliter {
+    display: none;
 }
 .menu-nav {
     color: black;
