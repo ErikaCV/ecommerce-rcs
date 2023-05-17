@@ -6,25 +6,34 @@
     display: flex;
     justify-content: space-between;
 }
+.cont-products .card {
+    margin: 3vh;
+    border: none;
+}
 .card {
-    margin: 20vh;
+    
+    margin: 0vh;
     width: 18rem;
     transition: all 0.3s ease-out;
     position: relative;
+    
 }
 
 
 .filternone  {
     visibility: hidden;
     opacity: 0;
-    transition: all 0.3s ease-in;
+    transition: all 0.5s ease-in;
 
 }
 .card img {
     height: auto;
 }
 .card:hover {
-    size: 0.5;
+    border: solid rgb(212, 212, 129) 1px;
+    size: 1%;
+    color: grey;
+    transform: scale(1.1);
 }
 .card:hover .filternone {
     /* display: block; */
