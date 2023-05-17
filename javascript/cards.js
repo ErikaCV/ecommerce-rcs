@@ -25,7 +25,7 @@ function loadproducts(chosenProducts) {
 					</div>
 					<div class="card-body d-flex filternone">
 					    <a href="#" id="${product.id}" class="btn add-cart filternone"><i class="bi bi-cart-plus-fill"></i></a>
-					    <a href="#" class="btn btn-danger p-1 m-1 filternone product">Ir al Producto</a>
+					    <a href="#" data-productid="${product.id}" class="btn btn-danger p-1 m-1 filternone product">Ir al Producto</a>
 					</div>
 					
         `;

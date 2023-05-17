@@ -117,11 +117,11 @@ const Products = [
 					name: "Indumentaria"
 			},
 			price: 19900,
-			payment: 3316 , 
+			payment: 3316, 
 			description:{
 				value1:"Elástico siliconado en extremo de las piernas",
 				value2:" Bandas reflectivas en elastico siliconado (especial para aquellos momentos donde tenemos menor visibilidad y necesitamos ser vistos)",
-				value3:"• Tela de badana que minimiza riesgo de irritación.",
+				value3:" Tela de badana que minimiza riesgo de irritación.",
 
 			},
 	},
@@ -149,7 +149,7 @@ const Products = [
 			image: "../assets/img/cards/jerseydama.webp",
 			stock: 1,
 			category: {
-					id: "dress" ,
+					id: "dress",
 					name: "Indumentaria"
 			},
 			price: 24500,
@@ -163,11 +163,11 @@ const Products = [
 	},
 	{
 			id: "product10",
-			title: "Rompevientos Magenta - Negro",
+			title: "Rompeneqvientos Magenta - Negro",
 			image: "../assets/img/cards/rompeviento.webp",
 			stock: 1,
 			category: {
-					id: "dress" ,
+					id: "dress",
 					name: "Indumentaria"
 			},
 			price: 20000,
@@ -189,7 +189,7 @@ const Products = [
 					name: "Bicicletas"
 			},
 			price: 159200,
-			payment: 26533 , 
+			payment: 26533, 
 			description:{
 				value1:"Cuadro FFW acero Hi-Ten. Rodado 700C.",
 				value2:"Horquilla rigida.",
@@ -293,7 +293,7 @@ const Products = [
 			image: "../assets/img/cards/woman cima.webp",
 			stock: 1,
 			category: {
-					id: "bikes" ,
+					id: "bikes",
 					name: "bicicletas"
 			},
 			price: 180000,
@@ -311,7 +311,7 @@ const Products = [
 			image: "../assets/img/cards/zenith roja.webp",
 			stock: 1,
 			category: {
-					id: "bikes" ,
+					id: "bikes",
 					name: "bicicletas"
 			},
 			price: 505000,
