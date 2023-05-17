@@ -8,7 +8,13 @@ const Products = [
 					id: "accesories",
 					name: "Accesorios"
 			},
-			price: 26690
+			price: 26690,
+			payment: 4.449,
+			description:{
+				value1: "Ajuste Velcro Trasero" ,
+				value2: "Tecnología PEAD alta densidad",
+				value3: "Broches laterales ajustables",
+			},
 	},
 	{
 			id: "product02",
@@ -19,7 +25,14 @@ const Products = [
 					id: "accesories",
 					name: "Accesorios"  
 			},
-			price: 90000
+			price: 90000,
+			payment: , 
+			description:{
+				value1:"",
+				value2:"",
+				value3:"",
+
+			},
 	},
 	{
 			id: "product03",
@@ -30,7 +43,14 @@ const Products = [
 					id: "accesories" ,
 					name: "Accesorios"
 			},
-			price: 25600
+			price: 25600,
+			payment: , 
+			description:{
+				value1:"",
+				value2:"",
+				value3:"",
+
+			},
 	},
 	{
 			id: "product04",
@@ -41,7 +61,14 @@ const Products = [
 					id: "accesories",
 					name: "Accesorios"
 			},
-			price: 64500
+			price: 64500,
+			payment: , 
+			description:{
+				value1:"",
+				value2:"",
+				value3:"",
+
+			},
 	},
 	{
 			id: "product05",
@@ -52,7 +79,14 @@ const Products = [
 					id: "accesories",
 					name: "Accesorios"
 			},
-			price: 13200
+			price: 13200,
+			payment: , 
+			description:{
+				value1:"",
+				value2:"",
+				value3:"",
+
+			},
 	},
 	{
 			id: "product06",
@@ -63,7 +97,14 @@ const Products = [
 					id:"dress",
 					name: "Indumentaria"
 			},
-					price: 14900
+					price: 14900,
+					payment: , 
+			description:{
+				value1:"",
+				value2:"",
+				value3:"",
+
+			},
 	},
 	{
 			id: "product07",
@@ -74,7 +115,14 @@ const Products = [
 					id: "dress",
 					name: "Indumentaria"
 			},
-			price: 19900
+			price: 19900,
+			payment: , 
+			description:{
+				value1:"",
+				value2:"",
+				value3:"",
+
+			},
 	},
 	{
 			id: "product08",
@@ -85,7 +133,14 @@ const Products = [
 					id: "dress",
 					name: "Indumentaria"
 			},
-			price: 13800
+			price: 13800,
+			payment: , 
+			description:{
+				value1:"",
+				value2:"",
+				value3:"",
+
+			},
 	},
 	{
 			id: "product09",
@@ -96,7 +151,14 @@ const Products = [
 					id: "dress" ,
 					name: "Indumentaria"
 			},
-			price: 24500
+			price: 24500,
+			payment: , 
+			description:{
+				value1:"",
+				value2:"",
+				value3:"",
+
+			},
 	},
 	{
 			id: "product10",
@@ -107,7 +169,14 @@ const Products = [
 					id: "dress" ,
 					name: "Indumentaria"
 			},
-			price: 20000
+			price: 20000,
+			payment: , 
+			description:{
+				value1:"",
+				value2:"",
+				value3:"",
+
+			},
 	},
 	{
 			id: "product11",
@@ -118,7 +187,14 @@ const Products = [
 					id: "bikes",
 					name: "Bicicletas"
 			},
-			price: 159200
+			price: 159200,
+			payment: , 
+			description:{
+				value1:"",
+				value2:"",
+				value3:"",
+
+			},
 	},
 	{
 			id: "product12",
@@ -129,7 +205,14 @@ const Products = [
 					id: "bikes",
 					name: "Bicicletas"
 			},
-			price: 184900
+			price: 184900,
+			payment: , 
+			description:{
+				value1:"",
+				value2:"",
+				value3:"",
+
+			},
 	},
 	{
 			id: "product13",
@@ -140,7 +223,14 @@ const Products = [
 					id: "bikes" ,
 					name: "bicicletas"
 			},
-			price: 33500
+			price: 33500,
+			payment: , 
+			description:{
+				value1:"",
+				value2:"",
+				value3:"",
+
+			},
 	},
 	{
 			id: "product14",
@@ -151,7 +241,14 @@ const Products = [
 					id: "bikes" ,
 					name: "bicicletas"
 			},
-			price:  339000
+			price:  339000,
+			payment: , 
+			description:{
+				value1:"",
+				value2:"",
+				value3:"",
+
+			},
 	},
 	{
 			id: "product15",
@@ -162,7 +259,14 @@ const Products = [
 					id: "bikes" ,
 					name: "bicicletas"
 			},
-			price: 411900
+			price: 411900,
+			payment: , 
+			description:{
+				value1:"",
+				value2:"",
+				value3:"",
+
+			},
 	},
 	{
 			id: "product16",
@@ -173,7 +277,14 @@ const Products = [
 					id: "bikes" ,
 					name: "bicicletas"
 			},
-			price: 160000
+			price: 160000,
+			payment: , 
+			description:{
+				value1:"",
+				value2:"",
+				value3:"",
+
+			},
 	},
 	{
 			id: "product17",
@@ -184,7 +295,14 @@ const Products = [
 					id: "bikes" ,
 					name: "bicicletas"
 			},
-			price: 180000
+			price: 180000,
+			payment: , 
+			description:{
+				value1:"",
+				value2:"",
+				value3:"",
+
+			},
 	},
 	{
 			id: "product18",
@@ -195,7 +313,14 @@ const Products = [
 					id: "bikes" ,
 					name: "bicicletas"
 			},
-			price: 505000
+			price: 505000,
+			payment: , 
+			description:{
+				value1:"",
+				value2:"",
+				value3:"",
+
+			},
 	},
 	{
 			id: "product19",
@@ -206,7 +331,14 @@ const Products = [
 					id: "bikes" ,
 					name: "bicicletas"
 			},
-			price: 154900
+			price: 154900,
+			payment: , 
+			description:{
+				value1:"",
+				value2:"",
+				value3:"",
+
+			},
 	},
 	{
 			id: "product20",
@@ -217,7 +349,14 @@ const Products = [
 					id: "bikes" ,
 					name: "bicicletas"
 			},
-			price: 230000
+			price: 230000,
+			payment: , 
+			description:{
+				value1:"",
+				value2:"",
+				value3:"",
+
+			},
 	}
 
 ];
