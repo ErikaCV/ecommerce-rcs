@@ -26,11 +26,11 @@ const Products = [
 					name: "Accesorios"  
 			},
 			price: 90000,
-			payment: , 
+			payment: 15000, 
 			description:{
-				value1:"",
-				value2:"",
-				value3:"",
+				value1:"Frenado intuitivo y potente",
+				value2:"Aplicación de Frenos más rápída con recorrido libre más corto",
+				value3:"Cockpit optimizado y regulable por el ciclista",
 
 			},
 	},
@@ -44,11 +44,11 @@ const Products = [
 					name: "Accesorios"
 			},
 			price: 25600,
-			payment: , 
+			payment: 4277 , 
 			description:{
-				value1:"",
-				value2:"",
-				value3:"",
+				value1:"Tecnología MaxxShield, hace la cubierta mucho más resistente a los pichanzos",
+				value2:"Presión máxima: 120psi",
+				value3:"Aro de Kevlar",
 
 			},
 	},
@@ -62,11 +62,12 @@ const Products = [
 					name: "Accesorios"
 			},
 			price: 64500,
-			payment: , 
+			payment: 10750 , 
 			description:{
-				value1:"",
-				value2:"",
-				value3:"",
+				value1:"Retroiluminación automática",
+				value2:"Capacidad de memoria: 16M 200h",
+				value3:"Inalámbrico: BLE5.0/ANT+",
+
 
 			},
 	},
@@ -80,11 +81,11 @@ const Products = [
 					name: "Accesorios"
 			},
 			price: 13200,
-			payment: , 
+			payment: 2200  , 
 			description:{
-				value1:"",
-				value2:"",
-				value3:"",
+				value1:"Duración de batería 300 horas",
+				value2:"Peso: 7,8g",
+				value3:"Dispositivo compatible con : Ciclocomputador GPS: BLE/ANT+",
 
 			},
 	},
@@ -98,11 +99,11 @@ const Products = [
 					name: "Indumentaria"
 			},
 					price: 14900,
-					payment: , 
+					payment: 2484 , 
 			description:{
-				value1:"",
-				value2:"",
-				value3:"",
+				value1:"45% cuero sintético, 38% poliéster, 9% poliamida, 5% PVC, 3% elastano",
+				value2:"Palma de cuero sintético perforado",
+				value3:"Serigrafia de silicona en dedos de frenado, apto también para táctil del celular",
 
 			},
 	},
@@ -116,11 +117,11 @@ const Products = [
 					name: "Indumentaria"
 			},
 			price: 19900,
-			payment: , 
+			payment: 3316 , 
 			description:{
-				value1:"",
-				value2:"",
-				value3:"",
+				value1:"Elástico siliconado en extremo de las piernas",
+				value2:" Bandas reflectivas en elastico siliconado (especial para aquellos momentos donde tenemos menor visibilidad y necesitamos ser vistos)",
+				value3:"• Tela de badana que minimiza riesgo de irritación.",
 
 			},
 	},
@@ -134,11 +135,11 @@ const Products = [
 					name: "Indumentaria"
 			},
 			price: 13800,
-			payment: , 
+			payment: 2300 , 
 			description:{
-				value1:"",
-				value2:"",
-				value3:"",
+				value1:"Jersey de bicicleta de montaña con ajuste relajado, informal en la naturaleza, técnico por diseño",
+				value2:"Bolsillo compacto con cremallera en el lado izquierdo, con logotipo TLD reflectante.",
+				value3:"Limpieza óptica dentro",
 
 			},
 	},
@@ -152,11 +153,11 @@ const Products = [
 					name: "Indumentaria"
 			},
 			price: 24500,
-			payment: , 
+			payment: 4085 , 
 			description:{
-				value1:"",
-				value2:"",
-				value3:"",
+				value1:" Cierre invisible YKK ® AUTOMATICK LOCK..",
+				value2:" Elástico antideslizante en toda la cintura.",
+				value3:" Tejidos con factor UV 20.",
 
 			},
 	},
@@ -170,11 +171,11 @@ const Products = [
 					name: "Indumentaria"
 			},
 			price: 20000,
-			payment: , 
+			payment:3333 , 
 			description:{
-				value1:"",
-				value2:"",
-				value3:"",
+				value1:" Cintura elástica tejida y siliconada para mejor confort y agarre.",
+				value2:" Bandas reflectivas en bolsillo trasero (especial para aquellos momentos donde tenemos menor visibilidad y necesitamos ser vistos)",
+				value3:" Orificio para mp3 en bolsillo trasero nos permite esconder el cable dentro del jersey evitando que se enganche con algún objeto.",
 
 			},
 	},
@@ -188,11 +189,11 @@ const Products = [
 					name: "Bicicletas"
 			},
 			price: 159200,
-			payment: , 
+			payment: 26533 , 
 			description:{
-				value1:"",
-				value2:"",
-				value3:"",
+				value1:"Cuadro FFW acero Hi-Ten. Rodado 700C.",
+				value2:"Horquilla rigida.",
+				value3:"Single speed con piñon libre y fijo.",
 
 			},
 	},
@@ -206,11 +207,11 @@ const Products = [
 					name: "Bicicletas"
 			},
 			price: 184900,
-			payment: , 
+			payment: 30816 , 
 			description:{
-				value1:"",
-				value2:"",
-				value3:"",
+				value1:"CUADRO: Zenith Andes de aluminio 6061, rodado 29, frente integrado, montaje para portapaquetes, montaje para freno a disco, punta cambiable.",
+				value2:"CADENA: Shimano HG40",
+				value3:"SHIFTERS: Shimano Altus M315>",
 
 			},
 	},
@@ -224,11 +225,11 @@ const Products = [
 					name: "bicicletas"
 			},
 			price: 33500,
-			payment: , 
+			payment: 5591 , 
 			description:{
-				value1:"",
-				value2:"",
-				value3:"",
+				value1:"La mejor manera para que los niños aprendan a andar en bicicleta!",
+				value2:"Cuentan con certificado de seguridad del INTI.",
+				value3:"Altura regulable de asiento: 35/43 cm al suelo.",
 
 			},
 	},
@@ -242,11 +243,11 @@ const Products = [
 					name: "bicicletas"
 			},
 			price:  339000,
-			payment: , 
+			payment: 56500 , 
 			description:{
-				value1:"",
-				value2:"",
-				value3:"",
+				value1:" Cuadro RIVA aluminio 6061. Rodado 29.",
+				value2:" Horquilla de suspensión Suntour XCT30 HLO (con bloqueo). 100 mm.",
+				value3:" Ruedas con aros Cross DW23D y mazas Shimano.",
 
 			},
 	},
@@ -260,11 +261,11 @@ const Products = [
 					name: "bicicletas"
 			},
 			price: 411900,
-			payment: , 
+			payment: 68500, 
 			description:{
-				value1:"",
-				value2:"",
-				value3:"",
+				value1:"Frenos a disco hidraulico Shimano MT410.",
+				value2:"Ruedas con aros Cross DW23D y mazas Shimano.",
+				value3:"ASIENTO: WTB Rocket 142 Sport",
 
 			},
 	},
@@ -278,11 +279,11 @@ const Products = [
 					name: "bicicletas"
 			},
 			price: 160000,
-			payment: , 
+			payment: 26666 , 
 			description:{
-				value1:"",
-				value2:"",
-				value3:"",
+				value1:"Bicicleta pensada para niños de 9 a 11 años",
+				value2:"Cuadro aluminio 6061",
+				value3:"Cambio Shimano 8 velocidades",
 
 			},
 	},
@@ -296,11 +297,11 @@ const Products = [
 					name: "bicicletas"
 			},
 			price: 180000,
-			payment: , 
+			payment: 30000 , 
 			description:{
-				value1:"",
-				value2:"",
-				value3:"",
+				value1:"Modelo: Cima Woman 2021 Suspensión",
+				value2:"Tipo: Urbana",
+				value3:"Cuadro: Aluminio 6061",
 
 			},
 	},
@@ -314,11 +315,11 @@ const Products = [
 					name: "bicicletas"
 			},
 			price: 505000,
-			payment: , 
+			payment:84166, 
 			description:{
-				value1:"",
-				value2:"",
-				value3:"",
+				value1:"Modelo: Cima Woman 2021 Suspensión",
+				value2:"Rodado: 28″ (700)",
+				value3:"Pata de Cambios: Shimano Altus 8v",
 
 			},
 	},
@@ -332,11 +333,11 @@ const Products = [
 					name: "bicicletas"
 			},
 			price: 154900,
-			payment: , 
+			payment: 25817, 
 			description:{
-				value1:"",
-				value2:"",
-				value3:"",
+				value1:"Discos Rotores: Shimano Center Lock",
+				value2:"Descarrilador: Shimano Tourney 2v",
+				value3:"Pata de Cambios: Shimano Altus 8v",
 
 			},
 	},
@@ -350,11 +351,11 @@ const Products = [
 					name: "bicicletas"
 			},
 			price: 230000,
-			payment: , 
+			payment: 38333 , 
 			description:{
-				value1:"",
-				value2:"",
-				value3:"",
+				value1:"Mazas: Shimano con Cierre Rápido",
+				value2:"Stem: Zenith Aluminio",
+				value3:"Pedales: Zenith de plataforma",
 
 			},
 	}
