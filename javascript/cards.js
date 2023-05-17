@@ -24,7 +24,7 @@ function loadproducts(chosenProducts) {
 					  <p class="card-text"><span class="red-bold">PRECIO</span><br>$${product.price}</p>
 					</div>
 					<div class="card-body d-flex filternone">
-					    <a href="#" id="${product.id}" class="btn add-cart filternone">Agregar al Carrito</a>
+					    <a href="#" id="${product.id}" class="btn add-cart filternone"><i class="bi bi-cart-plus-fill"></i></a>
 					    <a href="#" class="btn btn-danger p-1 m-1 filternone">Ir al Producto</a>
 					</div>
 					
