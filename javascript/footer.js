@@ -69,6 +69,8 @@ showInfoCountCart()
 
 
 
+
+
 /***Busqueda ****
 
 let boton = document.getElementById("searchButton");

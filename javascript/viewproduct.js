@@ -1,8 +1,10 @@
-iimport { Products } from "./dataBase.js";
+import { Products } from "./dataBase.js";
 
-const containerProduct = document.querySelector(".sctn-view");
 
-const searchProductView = (productId) => {
+
+const containerProduct = document.getElementById("sctn-view");
+
+const searchProductView = (productId = "product01" ) => {
   const product = Products.find((product) => product.id === productId);
 
   if (!product) {
@@ -47,12 +49,15 @@ const searchProductView = (productId) => {
 
   containerProduct.appendChild(div);
 };
-
 const searchViews = document.getElementsByClassName("product");
-
-for (let i = 0; i < searchViews.length; i++) {
-  searchViews[i].addEventListener("click", function () {
-    const productId = this.dataset.productid;
+Array.from(searchViews).forEach((view) => {
+  view.addEventListener("click", () => {
+    // Obtiene el ID del producto desde el atributo "data-product-id"
+    const productId = view.getAttribute("data-product-id");
     searchProductView(productId);
   });
-}
+});
+
+
+
+searchProductView()
