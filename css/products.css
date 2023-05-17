@@ -18,6 +18,11 @@
     position: relative;
     
 }
+.card-body{
+   
+    padding-left: 0;
+    padding-right: 0;
+}
 
 
 .filternone  {
@@ -45,18 +50,20 @@
    
 }
 .card i {
-    font-size:larger
+    font-size:large
 
 
 }
 .card .btn {
     width: 100%;
+
 }
+
 .btn {
     background-color: rgb(254, 0, 62);
     border: solid 1px  rgb(254, 0, 62); 
     color: aliceblue;
-    font-size: 0.8rem;
+    font-size: 1rem;
     
 
 
