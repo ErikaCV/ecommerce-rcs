@@ -16,7 +16,7 @@ function pintarproducto(chosenProduct) {
       <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="${product.image}" class="d-block" alt="..." />
+            <img src="${product.image}" class=" imagenProdcut d-block" alt="..." />
           </div>
         </div>
       </div>

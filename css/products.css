@@ -11,10 +11,10 @@
     border: none;
 }
 .card {
-    
+    object-fit: cover;
     margin: 0vh;
     width: 18rem;
-    transition: all 0.3s ease-out;
+    transition: all 0.1s ease-out;
     position: relative;
     
 }

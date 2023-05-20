@@ -38,14 +38,19 @@
     color: rgb(120, 37, 37);
 }
 .img-h {
+    
     height: 25%;
 }
+
+
+
+
 
 /*RESPONSIVE*/
 
 @media (min-width: 900px) {
     .carousel-item img {
-        width: auto;
+        width: 60%;
     }
     .sectn-card {
         display: flex;
