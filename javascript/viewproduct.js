@@ -1,17 +1,16 @@
+
 import { Products } from "./dataBase.js";
 
-
-
 const containerProduct = document.getElementById("sctn-view");
+const list = document.getElementById("productsContainer");
 
-const searchProductView = (productId = "product01" ) => {
-  const product = Products.find((product) => product.id === productId);
+function pintarproducto(chosenProduct) {
+  const product = Products.find((product) => product.id === chosenProduct);
 
   if (!product) {
-    return console.log('Product not Found');
+    console.log("Product not found");
+    return;
   }
-
-  containerProduct.innerHTML = "";
 
   const div = document.createElement("div");
   div.innerHTML = `
@@ -48,16 +47,9 @@ const searchProductView = (productId = "product01" ) => {
     </div>`;
 
   containerProduct.appendChild(div);
-};
-const searchViews = document.getElementsByClassName("product");
-Array.from(searchViews).forEach((view) => {
-  view.addEventListener("click", () => {
-    // Obtiene el ID del producto desde el atributo "data-product-id"
-    const productId = view.getAttribute("data-product-id");
-    searchProductView(productId);
-  });
+}
+
+list.addEventListener("click", (e) => {
+  const dataSetInfo = e.target.dataset.productid;
+  pintarproducto(dataSetInfo);
 });
-
-
-
-searchProductView()

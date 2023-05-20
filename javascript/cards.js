@@ -3,6 +3,7 @@ import { Products } from './dataBase.js';
 import { filterProducts } from './filter.js';
 
 
+
 const miArrayDeObjetos = JSON.parse(localStorage.getItem('miArray'));
 
 const containerProducts = document.querySelector("#productsContainer");
@@ -18,12 +19,13 @@ function loadproducts(chosenProducts) {
         const div = document.createElement("div"); 
         div.classList.add("card");
         div.innerHTML= `
+		            
 					<img src="${product.image}"class="card-img-top" alt="${product.title}">
 					<div class="card-body text-center">
 					  <h3 class="card-title">${product.title}</h3>
 					  <p class="card-text"><span class="red-bold">PRECIO</span><br>$${product.price}</p>
 					</div>
-					<div class="card-body d-flex filternone">
+					<div id="filternone" class="card-body d-flex filternone">
 					    <a href="#" id="${product.id}" class="btn add-cart filternone"><i class="bi bi-cart-plus-fill"></i></a>
 					    <a href="../views/card.html" target="_blank" data-productid="${product.id}" class="btn btn-danger p-1 m-1 filternone product">Ir al Producto</a>
 					</div>
@@ -38,7 +40,7 @@ function loadproducts(chosenProducts) {
     
     refreshaddbutton()
 }
-    
+
 loadproducts(Products)
 filterProducts()
 
@@ -98,3 +100,4 @@ function addProductCart(id) {
  return cartLocalStorage
 
 }
+
