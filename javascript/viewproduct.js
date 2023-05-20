@@ -1,4 +1,3 @@
-
 import { Products } from "./dataBase.js";
 
 const containerProduct = document.getElementById("sctn-view");
