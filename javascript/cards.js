@@ -17,7 +17,7 @@ function loadproducts(chosenProducts) {
     chosenProducts.forEach(product =>{
 
         const div = document.createElement("div"); 
-        div.classList.add("card");
+        div.classList.add("card","rounded");
 					TODO: /*Agregar el href*/
 
         div.innerHTML= `
@@ -27,7 +27,7 @@ function loadproducts(chosenProducts) {
 					  <p class="card-text"><span class="red-bold">PRECIO</span><br>$${product.price}</p>
 					</div>
 					<div id="filternone" class="card-body d-flex filternone">
-					    <a href="#" id="${product.id}" class="btn add-cart filternone"><i class="bi bi-cart-plus-fill"></i></a>
+					    <a href="#" id="${product.id}" class="btn add-cart filternone rounded"><i class="bi bi-cart-plus-fill"></i></a>
 					    <a href="../views/card.html" target="_blank" data-productid="${product.id}" class="btn btn-danger p-1 m-1 filternone product">Ir al Producto</a>
 					</div>
         `;

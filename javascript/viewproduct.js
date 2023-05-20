@@ -22,19 +22,19 @@ function pintarproducto(chosenProduct) {
       </div>
       <div class="price-cont">
         <h1 class="title">${product.title}</h1>
-        <h2>${product.price}</h2>
+        <h2>$${product.price}</h2>
         <p>
           <span class="red-bold">
             <i class="bi bi-credit-card-2-front"></i> 6 Cuotas sin interés
           </span>
-          de ${product.payment}
+          de $${product.payment}
         </p>
         <p>
           <span class="red-bold"><i class="bi bi-cash-coin"></i> 10% de Descuento</span>
           pagando con Efectivo o Depósito/Transferencia Bancaria <br />
           20% de recargo en 12 cuotas (Solicitar link de pago por Whatsapp)
         </p>
-        <a href=""><span class="red-bold">Ver más detalles</span></a>
+        <a target="_blank" href="../views/404.html"><span class="red-bold">Ver más detalles</span></a>
         <button type="button" class="butt">Agregar al Carrito</button>
         <ul class="caracter">
           <li>${product.description.value1}</li>
