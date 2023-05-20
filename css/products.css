@@ -11,9 +11,10 @@
     border: none;
 }
 .card {
-    object-fit: cover;
+    
+    object-fit:scale-down;
     margin: 0vh;
-    width: 18rem;
+    width: 20rem;
     transition: all 0.1s ease-out;
     position: relative;
     
@@ -33,6 +34,7 @@
 
 }
 .card img {
+
     height: auto;
 }
 .card:hover {
@@ -50,7 +52,9 @@
    
 }
 .card i {
-    font-size:large
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
 
 
 }
@@ -60,8 +64,11 @@
 }
 
 .btn {
-    background-color: rgb(254, 0, 62);
-    border: solid 1px  rgb(254, 0, 62); 
+    object-fit: cover;
+
+    border-radius: 10;
+    background-color: rgb(208, 89, 119);
+    border: solid 1px  rgb(212, 79, 112); 
     color: aliceblue;
     font-size: 1rem;
     
