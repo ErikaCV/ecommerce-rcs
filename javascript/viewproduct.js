@@ -2,7 +2,6 @@
 import { Products } from "./dataBase.js";
 
 const containerProduct = document.getElementById("sctn-view");
-const list = document.getElementById("productsContainer");
 
 function pintarproducto(chosenProduct) {
   const product = Products.find((product) => product.id === chosenProduct);
@@ -49,7 +48,5 @@ function pintarproducto(chosenProduct) {
   containerProduct.appendChild(div);
 }
 
-list.addEventListener("click", (e) => {
-  const dataSetInfo = e.target.dataset.productid;
-  pintarproducto(dataSetInfo);
-});
+const chosenProduct = localStorage.getItem('productSelected');
+pintarproducto(chosenProduct)

@@ -5,7 +5,7 @@ import { filterProducts } from './filter.js';
 
 
 const miArrayDeObjetos = JSON.parse(localStorage.getItem('miArray'));
-
+const list = document.getElementById("productsContainer");
 const containerProducts = document.querySelector("#productsContainer");
 const categoriesButtons = document.querySelectorAll(".categ-butt");
 let addButtons = document.querySelectorAll(".add-cart")
@@ -18,8 +18,9 @@ function loadproducts(chosenProducts) {
 
         const div = document.createElement("div"); 
         div.classList.add("card");
+					TODO: /*Agregar el href*/
+
         div.innerHTML= `
-		            
 					<img src="${product.image}"class="card-img-top" alt="${product.title}">
 					<div class="card-body text-center">
 					  <h3 class="card-title">${product.title}</h3>
@@ -27,14 +28,9 @@ function loadproducts(chosenProducts) {
 					</div>
 					<div id="filternone" class="card-body d-flex filternone">
 					    <a href="#" id="${product.id}" class="btn add-cart filternone"><i class="bi bi-cart-plus-fill"></i></a>
-					    <a href="../views/card.html" target="_blank" data-productid="${product.id}" class="btn btn-danger p-1 m-1 filternone product">Ir al Producto</a>
+					    <a href="../views/card.html" data-productid="${product.id}" class="btn btn-danger p-1 m-1 filternone product">Ir al Producto</a>
 					</div>
-					
         `;
-
-
-								
-			
         containerProducts.append(div); 
     });
     
@@ -101,3 +97,8 @@ function addProductCart(id) {
 
 }
 
+list.addEventListener("click", (e) => {
+  const dataSetInfo = e.target.dataset.productid;
+
+	localStorage.setItem('productSelected', dataSetInfo);
+});
