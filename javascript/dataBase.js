@@ -1,7 +1,7 @@
 const Products = [
 	{
 			id: "product01",
-			title: "Pechera Radikal Racing",
+			title: "Pechera Radikal Racing Otto Rocket",
 			image: "../assets/img/cards/pechera1.webp",
 			stock: 1, 
 			category: {
@@ -109,7 +109,7 @@ const Products = [
 	},
 	{
 			id: "product07",
-			title: "Calza Aero 03 Negra",
+			title: "Calza Aero 03 Negra Azabache",
 			image: "../assets/img/cards/calza.webp",
 			stock: 1,
 			category: {
@@ -127,7 +127,7 @@ const Products = [
 	},
 	{
 			id: "product08",
-			title: "Blue Jersey Zeroox",
+			title: "Blue Jersey Zeroox  Talle Unico",
 			image: "../assets/img/cards/jersey blue front.webp",
 			stock: 1,
 			category: {
@@ -199,7 +199,7 @@ const Products = [
 	},
 	{
 			id: "product12",
-			title: "Zenith Andes - Negro",
+			title: "Zenith Andes - Wenbayama Negro",
 			image: "../assets/img/cards/zenith.webp",
 			stock: 1,
 			category: {
@@ -253,7 +253,7 @@ const Products = [
 	},
 	{
 			id: "product15",
-			title: "Zenith Calea - Gris",
+			title: "Zenith Calea - Urbana Gris",
 			image: "../assets/img/cards/Bicicleta Mtb Zenith.webp",
 			stock: 1,
 			category: {
