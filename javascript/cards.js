@@ -35,7 +35,7 @@ function loadproducts(chosenProducts) {
 
 								
 			
-        containerProducts.append(div); 
+        containerProducts.appe	(div); 
     });
     
     refreshaddbutton()
