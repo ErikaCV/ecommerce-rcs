@@ -9,7 +9,9 @@
   .product-details {
 	padding: 10px;
   }
-  
+  label img { width:30vw;
+        
+  }
   body {
 	background: #eee;
   }
@@ -63,6 +65,9 @@
 	border-color: #fff;
 	background-color: red;
 	color: #fff;
+  }
+  .tarjeta img {
+	margin-right: 10px;
   }
   
   .credit-inputs {
