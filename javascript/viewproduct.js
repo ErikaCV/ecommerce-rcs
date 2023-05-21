@@ -35,7 +35,7 @@ function pintarproducto(chosenProduct) {
           20% de recargo en 12 cuotas (Solicitar link de pago por Whatsapp)
         </p>
         <a target="_blank" href="../views/404.html"><span class="red-bold">Ver más detalles</span></a>
-        <button type="button" class="butt">Agregar al Carrito</button>
+        <button id="AddCartProduct" type="button" class="butt">Agregar al Carrito</button>
         <ul class="caracter">
           <li>${product.description.value1}</li>
           <li>${product.description.value2}</li>

@@ -112,6 +112,7 @@ function deleteProductCart(e) {
   for (let i = 0; i < deleteButtons.length; i++) {
 	deleteButtons[i].addEventListener("click", deleteProductCart);
  }
+ 
 
 
 
