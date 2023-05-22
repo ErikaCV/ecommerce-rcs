@@ -68,7 +68,7 @@ function refreshaddbutton() {
 
 
 
-function addToCart(e) {
+ function addToCart(e) {
 	const idProduct = e.currentTarget.id;
 	const productAdded = addProductCart(idProduct)
 
