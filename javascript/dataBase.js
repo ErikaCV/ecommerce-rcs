@@ -377,20 +377,20 @@ const Users = [
 	{   
 		id: 1,
 		name: "Erika Cruz Vallejo",
-		linkedin: "www.google.com",
-		gitHub: "www.google.com",
+		linkedin: "https://www.linkedin.com/in/erika-johana-cruz-vallejo-09ab65276/",
+		gitHub: "https://github.com/ErikaCV",
 	},
 	{   
 		id: 2,
 		name: "Samir Mahmud",
-		linkedin: "www.google.com",
-		gitHub: "www.google.com",
+		linkedin: "https://www.linkedin.com/in/samir-mahmud-4265a31b7/",
+		gitHub: "https://github.com/samir93bj",
 	},
 	{   
 		id: 3,
 		name: "José Terol",
-		linkedin: "www.google.com",
-		gitHub: "www.google.com",
+		linkedin: "https://www.linkedin.com/in/jos%C3%A9-e-terol-353753254/",
+		gitHub: "https://github.com/JoeTerol",
 	}
 ]
 

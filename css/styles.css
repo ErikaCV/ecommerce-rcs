@@ -127,3 +127,6 @@ background-color:#BEBEBE;
   max-width: 100%;
   height: auto;
 }
+.cards-deals {
+  display: none;
+}

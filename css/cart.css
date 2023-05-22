@@ -66,6 +66,12 @@
 	background-color: red;
 	color: #fff;
   }
+  .deleteproduct {
+	padding: 4px;
+	color: red;
+	background-color: white;
+	font-size: 20px;
+  }
   .tarjeta img {
 	margin-right: 10px;
   }
@@ -111,4 +117,9 @@
   
   .spec {
 	font-size: 11px;
+  }
+  @media (max-width: 768px) {
+	img {
+		display: none;
+	}
   }
