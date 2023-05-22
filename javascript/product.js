@@ -1,33 +1,38 @@
-import { Products } from "./dataBase.js";
+	import { Products } from "./dataBase.js";
 
-const listPorducts = () => {
-	return Products
-}
 
-const searchProduct = (idProduct) => {
-	const product = Products.find(product => product.id === idProduct)
 
-	if (!product) {
-		return console.log('Product not Found');
+	const listPorducts = () => {
+		return Products
 	}
 
-	return product
-};
+	const searchProduct = (idProduct) => {
+		const product = Products.find(product => product.id === idProduct)
 
-function callToProduct(Products) {
-	addButtons = document.querySelectorAll("#product-card");
-	addButtons.forEach(boton => {
-		boton.addEventListener("click", searchtarget);
-	});
+		if (!product) {
+			return console.log('Product not Found');
+		}
 
-}
+		return product
+	};
 
-function searchtarget(e) {
-	const idProduct = e.currentTarget.id;
-	const productFound = Products.find(product => product.id === idProduct);
+	function callToProduct(Products) {
+		addButtons = document.querySelectorAll("#product-card");
+		addButtons.forEach(boton => {
+			boton.addEventListener("click", searchtarget);
+		});
 
-	return productFound
-}
+	}
 
-export { searchProduct, listPorducts }
+	function searchtarget(e) {
+		const idProduct = e.currentTarget.id;
+		const productFound = Products.find(product => product.id === idProduct);
+
+		return productFound
+	}
+
+	export { searchProduct, listPorducts }
+
+
+
 

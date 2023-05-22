@@ -9,28 +9,48 @@ const removeProduct = document.querySelectorAll(".delete-product")
 let addButtons = document.querySelectorAll(".delete-product")
 
 /**************MUESTRA EL LISTADO DE PRODUCTOS******************* */
-function showProductCart (cartMemory) {
+function showProductCart(cartMemory) {
 	containerCart.innerHTML = "";
-
-	cartMemory.forEach( product => {
-		const div = document.createElement("div");
-		div.innerHTML= `
-				<div class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
-					<div class="d-flex flex-row"><img class="rounded" src="${product.image}" width="40">
-						<div class="ml-2"><span class="font-weight-bold d-block">${product.title}</div>
-					</div>
-						<div class="d-flex flex-row align-items-center">
-							<span class="d-block"></span>
-							<span class="d-block mx-5 font-weight-bold">${product.price}</span>
-							<span><button data-productid="${product.id}"  class="delete-product" id="${product.id}"><i class="deleteproduct bi bi-trash"></i></button></span>
-							<i class="fa fa-trash-o ml-3 text-black-50"></i>
-						</div>
-					</div>
-        `;
-		
-			containerCart.append(div); 
+  
+	const productGroups = new Map();
+  
+	cartMemory.forEach((product) => {
+	  if (productGroups.has(product.id)) {
+		productGroups.get(product.id).quantity++;
+	  } else {
+		productGroups.set(product.id, {
+		  product,
+		  quantity: 1,
+		});
+	  }
 	});
-
+	productGroups.forEach((group) => {
+		const div = document.createElement("div");
+		div.innerHTML = `
+		  <div class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
+			<div class="d-flex flex-row">
+			  <img class="rounded" src="${group.product.image}" width="40">
+			  <div class="ml-2">
+				<span class="font-weight-bold d-block">${group.product.title}</span>
+				<span class="font-weight-bold d-block">Cantidad: ${group.quantity}</span>
+			  </div>
+			</div>
+			<div class="d-flex flex-row align-items-center">
+			  <span class="d-block"></span>
+			  <span class="d-block mx-5 font-weight-bold">${group.product.price}</span>
+			  <span>
+				<button data-productid="${group.product.id}" class="delete-product" id="${group.product.id}">
+				  <i class="deleteproduct bi bi-trash"></i>
+				</button>
+			  </span>
+			  <i class="fa fa-trash-o ml-3 text-black-50"></i>
+			</div>
+		  </div>
+		`;
+	
+		containerCart.append(div);
+	  });
+	
 }
 
 /**************MUESTRA LA INFO DEL CARRO******************* */
@@ -61,7 +81,7 @@ function showInfortotalCart (total) {
 	const div = document.createElement("div");
 	div.innerHTML= `
 	<div>
-		<div class="d-flex justify-content-between information"><span>Total (Incl. Impuestos)</span><span>${total}</span></div><button class="btn btn-primary btn-block d-flex justify-content-between mt-3" type="button"><span>${total}</span><span class="mx-3">Pagar<i class="fa fa-long-arrow-right mx-3"></i></span></button></div>
+		<div class="d-flex justify-content-between information"><span>Total</span><span>$${total}</span></div><button id="payButton" class="btn btn-dark text-danger  btn-block d-flex justify-content-between mt-3" type="button"><span>$${total}</span><span class="mx-3">Pagar<i class="fa fa-long-arrow-right mx-3"></i></span></button></div>
 	</div>
 	`
 	totalInforCart.append(div)
@@ -92,7 +112,17 @@ function deleteProductCart(e) {
   for (let i = 0; i < deleteButtons.length; i++) {
 	deleteButtons[i].addEventListener("click", deleteProductCart);
  }
+ 
+ const buttonpay = document.getElementById("payButton")
+ buttonpay.addEventListener("click", bugCart)
+ 
+ 
+ function bugCart() {
+ 
+ let resultado = window.alert("Oops! Ocurrió un error Prueba más Tarde");
 
+ 
+ }
 
 
 

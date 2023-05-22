@@ -26,6 +26,10 @@
     border-radius: 10px;
 
 }
+.red-bold i {
+    font-size: 1.5reM;
+    margin: 12px;
+}
 .red-bold {
     font-weight: bold;
     color: brown;
@@ -38,14 +42,19 @@
     color: rgb(120, 37, 37);
 }
 .img-h {
+    
     height: 25%;
 }
+
+
+
+
 
 /*RESPONSIVE*/
 
 @media (min-width: 900px) {
     .carousel-item img {
-        width: auto;
+        width: 60%;
     }
     .sectn-card {
         display: flex;

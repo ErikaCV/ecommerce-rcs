@@ -9,7 +9,9 @@
   .product-details {
 	padding: 10px;
   }
-  
+  label img { width:30vw;
+        
+  }
   body {
 	background: #eee;
   }
@@ -64,6 +66,15 @@
 	background-color: red;
 	color: #fff;
   }
+  .deleteproduct {
+	padding: 4px;
+	color: red;
+	background-color: white;
+	font-size: 20px;
+  }
+  .tarjeta img {
+	margin-right: 10px;
+  }
   
   .credit-inputs {
 	background: rgb(255, 255, 255);
@@ -112,3 +123,8 @@
 	border-radius: 15%;
   }
   
+  @media (max-width: 768px) {
+	img {
+		display: none;
+	}
+  }

@@ -21,11 +21,12 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light p-lg-5 shadow-sm">
-		<div class="container">
+<nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light p-lg-3 shadow-sm p-lg-3 ">
+	<div class="container flex justify-content-between">
+			<img src="../assets/img/logo.jpeg" class=" rounded-circle" alt=""> 
 		<a class="navbar-brand" href="./index.html">
-			<!-- <img src="../assets/img/logo.jpeg" class="w-25" alt=""> --> <strong class="fs-4"
-				style="color: red" class="logo-bike">THE BIKE</strong>
+			
+			<strong class="logo-bike fs-4">THE BIKE</strong>
 		</a>
 
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -50,17 +51,17 @@
 							class="fa-solid fa-magnifying-glass"></i>
 					</span>
 						<input id="searchInput" type="text" class="form-control border-danbg-danger">
-						<button type="submit" id="searchButton" class=" btn btn-danger text-white">Buscar</button>
+						<button type="submit" id="searchButton" class=" btn btn-danger text-white fs-5">BUSCAR</button>
 				</div>
 			</div>
 			
 			<ul class="navbar-nav ms-auto ">	
 				<li class="nav-item">
-					<a class="nav-link mx-2 text-uppercase active bg-danger text-white" aria-current="page"
+					<a class="nav-link mx-2 text-uppercase active bg-danger text-white fs-5" aria-current="page"
 						href="./views/products.html">Productos</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link mx-2 text-uppercase" href="./views/contact.html">Contactanos</a>
+					<a class="nav-link mx-2 text-uppercase fs-5" href="./views/contact.html">Contactanos</a>
 				</li>
 			</ul>
 			<ul class="navbar-nav ms-auto ">
@@ -69,15 +70,15 @@
 	
 					</span>
 					<a class="nav-link mx-2 text-uppercase" href="./views/cart.html">
-					<i class="fa-solid fa-cart-shopping me-1"></i>Carro</a>
+					<i class="fa-solid fa-cart-shopping me-1 fs-5"></i>Carro</a>
 				</li>
 				<li class="nav-item d-flex align-items-center">
 					<a class="nav-link mx-2 text-uppercase" href="./views/login.html"><i
-							class="fa-solid fa-circle-user me-1"></i>Cuenta</a>
+							class="fa-solid fa-circle-user p-2 me-1 fs-5"></i>Cuenta</a>
 				</li>
 			</ul>
-		</div>
-	</nav>
+	</div>
+</nav>
 	<!--Carusel-->
 	<div id="root-slider">
 	
@@ -130,7 +131,7 @@
 	<!-- cards carousel featured -->
 	<section class="cards-featured">
 		<h2 class="text-center m-5 p-3 fw-bold bg-danger text-white">DESTACADOS</h2>
-		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+		<div id="carouselExampleControls" class="carousel slide col-m-4" data-bs-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<div class="cards-wrapper d-flex justify-content-evenly">
@@ -139,7 +140,7 @@
 							<div class="card-body text-center">
 								<h5 class="card-title">Ciclo Compu IGPS Sport</h5>
 								<p class="card-text"><span class="red-bold">PRECIO</span><br>$64.500</p>
-								<a href="./views/card.html" id="product-card" class="btn btn-danger">Ir al Producto</a>
+								<a href="./views/products.html" id="product-card" class="btn btn-danger">Ver más Productos</a>
 							</div>
 						</div>
 						<div class="card" style="width: 18rem;">
@@ -148,7 +149,7 @@
 								<h5 class="card-title">Guantes Troy Lee Turqoise</h5>
 								<p class="card-text"><span class="red-bold">PRECIO</span><br>$14.900</p>
 
-								<a href="./views/card.html"  id="product-card" class="btn btn-danger">Ir al Producto</a>
+								<a href="./views/products.html"  id="product-card" class="btn btn-danger">Ver más Productos</a>
 							</div>
 						</div>
 						<div class="card d-none d-md-block" style="width: 18rem;">
@@ -156,7 +157,7 @@
 							<div class="card-body text-center">
 								<h5 class="card-title">Blue jersey Ziroox</h5>
 								<p class="card-text"><span class="red-bold">PRECIO</span><br>$13.800</p>
-								<a href="./views/card.html" id="product-card" class="btn btn-danger">Ir al Producto</a>
+								<a href="./views/products.html" id="product-card" class="btn btn-danger">Ver más Productos</a>
 							</div>
 						</div>
 						<div class="card" style="width: 18rem;">
@@ -164,7 +165,7 @@
 							<div class="card-body text-center">
 								<h5 class="card-title">Zenith Andes Rodado 29</h5>
 								<p class="card-text"><span class="red-bold">PRECIO</span><br>$184.900</p>
-								<a href="./views/card.html" id="product-card" class="btn btn-danger">Ir al Producto</a>
+								<a href="./views/products.html" id="product-card" class="btn btn-danger">Ver más Productos</a>
 							</div>
 						</div>
 					</div>
@@ -176,7 +177,7 @@
 							<div class="card-body text-center">
 								<h5 class="card-title">Pechera Radikal Racing</h5>
 								<p class="card-text"><span class="red-bold">PRECIO</span><br>$26.690</p>
-								<a href="#" class="btn btn-danger">Ir al Producto</a>
+								<a href="./views/products.html" class="btn btn-danger">Ver más Productos</a>
 							</div>
 						</div>
 						<div class="card" style="width: 18rem;">
@@ -184,7 +185,7 @@
 							<div class="card-body text-center">
 								<h5 class="card-title">Calza Aero 3</h5>
 								<p class="card-text"><span class="red-bold">PRECIO</span><br>$19.900</p>
-								<a href="#" class="btn btn-danger">Ir al Producto</a>
+								<a href="./views/products.html" class="btn btn-danger">Ver más Productos</a>
 							</div>
 						</div>
 						<div class="card d-none d-md-block" style="width: 18rem;">
@@ -192,7 +193,7 @@
 							<div class="card-body text-center">
 								<h5 class="card-title">LLanta Mavic Rodado 29</h5>
 								<p class="card-text"><span class="red-bold">PRECIO</span><br>$25.200</p>
-								<a href="#" class="btn btn-danger">Ir al Producto</a>
+								<a href="./views/products.html" class="btn btn-danger">Ver más Productos</a>
 							</div>
 						</div>
 						<div class="card" style="width: 18rem;">
@@ -200,7 +201,7 @@
 							<div class="card-body text-center">
 								<h5 class="card-title">Frenos Shimano</h5>
 								<p class="card-text"><span class="red-bold">PRECIO</span><br>$120.000</p>
-								<a href="#" class="btn btn-danger">Ir al Producto</a>
+								<a href="./views/products.html" class="btn btn-danger">Ver más Productos</a>
 							</div>
 						</div>
 					</div>
@@ -212,7 +213,7 @@
 							<div class="card-body text-center">
 								<h5 class="card-title">Bicicleta Urbana - amarillo </h5>
 								<p class="card-text"><span class="red-bold">PRECIO</span><br>$159.200</p>
-								<a href="#" class="btn btn-danger">Ir al Producto</a>
+								<a href="./views/products.html" class="btn btn-danger">Ver más Productos</a>
 							</div>
 						</div>
 						<div class="card" style="width: 18rem;">
@@ -220,7 +221,7 @@
 							<div class="card-body text-center">
 								<h5 class="card-title">Frenos Shimano</h5>
 								<p class="card-text"><span class="red-bold">PRECIO</span><br>$120.000</p>
-								<a href="#" class="btn btn-danger">Ir al Producto</a>
+								<a href="./views/products.html" class="btn btn-danger">Ver más Productos</a>
 							</div>
 						
 						</div>
@@ -229,7 +230,7 @@
 							<div class="card-body text-center">
 								<h5 class="card-title">Cubierta de ruta MAxxis</h5>
 								<p class="card-text"><span class="red-bold">PRECIO</span><br>$25.600</p>
-								<a href="#" class="btn btn-danger">Ir al Producto</a>
+								<a href="./views/products.html" class="btn btn-danger">Ver más Productos</a>
 							</div>
 						</div>
 						<div class="card" style="width: 18rem;">
@@ -237,7 +238,7 @@
 							<div class="card-body text-center">
 								<h5 class="card-title">Sensor de velocidad IGP Sports	</h5>
 								<p class="card-text"><span class="red-bold">PRECIO</span><br>$13.200</p>
-								<a href="#" class="btn btn-danger">Ir al Producto</a>
+								<a href="./views/products.html" class="btn btn-danger">Ver más Productos</a>
 							</div>
 						</div>
 					</div>
@@ -266,18 +267,18 @@
 	<section class="cards-daily-deals">
 		<div class="cards-deals">
 			<div class="gal1 d-none d-md-block">
-				<a href="#" class="btn btn-danger">20% off</a>
+				<a href="./views/products.html" class="btn btn-danger">20% off</a>
 			</div>
 			<div class="gal2">
-				<a href="#" class="btn btn-danger">10% off</a>
+				<a href="./views/products.html" class="btn btn-danger">10% off</a>
 			</div>
 			<div class="gal3 d-none d-md-block">
-				<a href="#" class="btn btn-danger">15% off</a>
+				<a href="./views/products.html" class="btn btn-danger">15% off</a>
 			</div>
 			<div class="gal4">
-				<a href="#" class="btn btn-danger">50% off</a></div>
+				<a href="./views/products.html" class="btn btn-danger">50% off</a></div>
 			<div class="gal5 d-none d-md-block">
-				<a href="#" class="btn btn-danger">30% off</a>
+				<a href="./views/products.html" class="btn btn-danger">30% off</a>
 			</div>
 		</div>
 	</section>
@@ -297,13 +298,13 @@
 						</div>
 					<div class="cont-items social">
 						<h2 class="title-items">Seguinos</h2>
-						<a href="#">
+						<a target="_blank" href="https://www.instagram.com/the_bike_rcs/">
 							<i class="bi bi-instagram icons-social instagram"></i>
 						</a>
-						<a href="#">
+						<a target="_blank" href="./views/404.html">
 							<i class="bi bi-twitter icons-social twiter"></i>
 						</a>
-						<a href="#">
+						<a target="_blank" href="./views/404.html">
 							<i class="bi bi-facebook icons-social facebook"></i>
 						</a>
 					</div>
