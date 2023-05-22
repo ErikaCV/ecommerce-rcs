@@ -81,7 +81,7 @@ function showInfortotalCart (total) {
 	const div = document.createElement("div");
 	div.innerHTML= `
 	<div>
-		<div class="d-flex justify-content-between information"><span>Total</span><span>${total}</span></div><button class="btn btn-dark text-danger  btn-block d-flex justify-content-between mt-3" type="button"><span>${total}</span><span class="mx-3">Pagar<i class="fa fa-long-arrow-right mx-3"></i></span></button></div>
+		<div class="d-flex justify-content-between information"><span>Total</span><span>${total}</span></div><button id="payButton" class="btn btn-dark text-danger  btn-block d-flex justify-content-between mt-3" type="button"><span>${total}</span><span class="mx-3">Pagar<i class="fa fa-long-arrow-right mx-3"></i></span></button></div>
 	</div>
 	`
 	totalInforCart.append(div)
@@ -113,7 +113,16 @@ function deleteProductCart(e) {
 	deleteButtons[i].addEventListener("click", deleteProductCart);
  }
  
+ const buttonpay = document.getElementById("payButton")
+ buttonpay.addEventListener("click", bugCart)
+ 
+ 
+ function bugCart() {
+ 
+ let resultado = window.alert("Oops! Ocurrió un error Prueba más Tarde");
 
+ 
+ }
 
 
 
