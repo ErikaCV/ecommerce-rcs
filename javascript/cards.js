@@ -18,7 +18,7 @@ function loadproducts(chosenProducts) {
 
         const div = document.createElement("div"); 
         div.classList.add("card","rounded");
-					TODO: /*Agregar el href*/
+					
 
         div.innerHTML= `
 					<img src="${product.image}"class="card-img-top" alt="${product.title}">
