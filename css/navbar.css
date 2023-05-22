@@ -1,6 +1,11 @@
 .navbar {
 	background-color: #dc3545 !important;
 }
+.count-number {
+	background-color: aliceblue;
+	padding: 5px;
+	border-radius: 50%;
+}
 .logo-bike {
 	color: white !important;
 }
